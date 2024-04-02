@@ -230,7 +230,11 @@ form {
   
   @media (max-width: 500px) {
     .container {
-      width: 100%;
+      width: 80%;
+      margin-top: 30%;
+    }
+    header{
+        display: flex;
     }
   }
 
