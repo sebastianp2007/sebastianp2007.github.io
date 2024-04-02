@@ -234,7 +234,8 @@ form {
       margin-top: 30%;
     }
     header{
-        display: flex;
+        display: block;
+        float: left;
     }
   }
 
