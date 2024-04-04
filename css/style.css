@@ -14,11 +14,29 @@ header {
     padding-bottom: 10px;
 }
 
-header:hover{
-    transition: background-color 0.5s;
-    background-color: rgb(255, 255, 255);
+header nav {
+    float: left;
+    font-size: large;
+    margin-top: 2%;
+    font-size: 20px;
+    padding-left: 3%;
+    display: flex;
+    text-decoration: none;
 }
 
+header:hover{
+    transition: background-color 0.5s;
+    background-color: white;
+}
+
+.dropdown .dropbtn {
+    font-size: 0px;  
+    color: white;
+    background-color:#4CAF50;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
 #imagen{
     margin: 5px;
     float: left;
@@ -41,14 +59,7 @@ header:hover{
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
-header nav {
-    float: left;
-    font-size: large;
-    margin-top: 2%;
-    font-size: 20px;
-    padding-left: 3%;
-    display: flex;
-}
+
 
 #figuras{
     float: left;
@@ -231,7 +242,14 @@ form {
   @media (max-width: 500px) {
     .container {
       width: 80%;
-      margin-top: 30%;
+      margin-top: 5%;
+    }
+    header {
+        width: 100%;
+        padding-left: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: inherit;
     }
     header nav{
     float: left;
@@ -241,17 +259,82 @@ form {
     padding-left: 1%;
     display: block;
     height: 150px;
-    overflow-y: auto;
+    overflow-y: hidden;
     }
     header nav a{
         text-align: left;
         display: block;
         padding: 8px;
-        background-color: #448744;
         margin: 10px;
         border-radius: 5px;
         color: white;
     }
+    .navbar {
+        overflow: hidden;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: left;
+        padding: 20px;
+        overflow: hidden;
+        align-items: center;
+      }
+      
+      .dropdown .dropbtn {
+        display: block;
+        font-size: 18px;  
+        border-radius: 5px;
+        outline: none;
+        color: white;
+        padding: 14px 25px;
+        background-color:#4CAF50;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color:#00a806;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:white;
+        border-radius: 5px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        font-family: Arial, Helvetica, sans-serif;
+        float: none;
+        font-size: 16px;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color:#4CAF50;
+        color: #000000;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+        height: auto;
+      }
   }
 
   .container img{
@@ -268,3 +351,5 @@ form {
     justify-content: center;
     margin-bottom: 10px;
   }
+/*nuevo*/
+
