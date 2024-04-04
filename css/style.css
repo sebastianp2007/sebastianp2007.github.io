@@ -231,11 +231,26 @@ form {
   @media (max-width: 500px) {
     .container {
       width: 80%;
-      margin-top: 35%;
+      margin-top: 30%;
     }
-    header{
+    header nav{
+    float: left;
+    font-size: large;
+    margin-top: 2%;
+    font-size: 20px;
+    padding-left: 1%;
+    display: block;
+    height: 150px;
+    overflow-y: auto;
+    }
+    header nav a{
+        text-align: left;
         display: block;
-        float: left;
+        padding: 8px;
+        background-color: #448744;
+        margin: 10px;
+        border-radius: 5px;
+        color: white;
     }
   }
 
