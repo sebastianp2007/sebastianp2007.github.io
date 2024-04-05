@@ -160,6 +160,15 @@ footer {
     float: left;
 }
 
+footer div a{
+    margin: 1px 5px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: white;
+    display: flex;
+}
+
 footer div{
     display: flex;
     float: left;
@@ -254,7 +263,16 @@ form {
   @media (max-width: 500px) {
     .container {
       width: 80%;
-      margin-top: 5%;
+      height: auto;
+    }
+    footer div a{
+        margin: 1px 1px;
+        font-size: 10px;
+        display: block;
+    }
+    footer{
+        padding: 0 12px;
+        margin-top: 0;
     }
     header {
         width: 100%;
