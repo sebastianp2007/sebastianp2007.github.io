@@ -189,6 +189,21 @@ footer p{
     padding-top: auto;
 }
 
+footer .la{
+  align-content: center;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  padding: 3px 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+footer .la:hover{
+  background-color:#4CAF50;
+}
 #argumento{
     text-align: center;
     font-size: 30px;
