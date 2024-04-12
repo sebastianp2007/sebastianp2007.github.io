@@ -8,7 +8,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(241, 241, 241, 0.342);
+    background-color: white;
     padding-left: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -24,49 +24,56 @@ header nav {
     text-decoration: none;
 }
 
-header:hover{
-    transition: background-color 0.5s;
-    background-color: white;
-}
 
 .dropdown .dropbtn {
-    font-size: 0px;  
-    color: white;
-    background-color:#4CAF50;
-    margin: 0;
-    padding: 0;
-    display: none;
-  }
+  font-size: 0px;  
+  color: white;
+  background-color: rgb(39, 134, 151);
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
 #imagen{
     margin: 5px;
     float: left;
 }
 
 #fondo{
-    width: 100%;  
-    height: 100%;
+  width: 100%;  
+  height: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(39, 134, 151, 0.562);
+}
+
+#fondo img{
+  width: 40%;
+  height: auto;
+  margin: auto;
 }
 
 #ser{
-    color: rgb(42, 146, 94);
-    margin: 0;
+  color: rgb(39, 134, 151);
+  margin: 0;
 }
 
 #texto{
-    padding: 2.5%;
-    text-align: center;
-    font-size: 50px;
-    font-family:Georgia, 'Times New Roman', Times, serif
+  padding: 2.5%;
+  text-align: center;
+  font-size: 50px;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 
 
 #figuras{
-    float: left;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .la{
@@ -85,64 +92,45 @@ header nav a:hover {
     color: #999696;
 }
 
+#civil{
+  font-weight: 1000;
+}
+
+#topo{
+  font-weight: 1000;
+}
+
+#ambi{
+  font-weight: 1000;
+}
+
+#servi{
+  font-weight: 1000;
+}
+
 .contenedor{
-    text-align: center;
-    margin: 4%;
-    transition: 0,7s;
-    opacity: 0,8;
+  text-align: center;
+  transition: 0,7s;
+  opacity: 0,8;
+  width: 40%;
+  margin: 2%;
+}
+.contenedor img{
+  width: 50%;
+  height: auto;
+  margin: 0;
 }
 
-.contenedor:hover{
-    transform: scale(1.03);
-}
-
-.contenedor:hover .texto{
-    visibility: visible;
-}
-
-#jardin{
-    font-size: 50px;
-    padding: 24% 20%;
-    background-color: rgba(13, 146, 1, 0.329);
-}
-#poda{
-    font-size: 40px;
-    padding: 10.5% 34%;
-    background-color: rgba(13, 146, 1, 0.329);
-}
-
-#lava{
-    font-size: 40px;
-    padding: 12% 26%;
-    background-color: rgba(13, 146, 1, 0.329);
-}
-
-#reco{
-    font-size: 48px;
-    padding: 29% 13%;
-    background-color: rgba(13, 146, 1, 0.329);
-}
-
-#tran{
-    font-size: 45px;
-    padding: 12% 22%;
-    background-color: rgba(13, 146, 1, 0.329);
-}
-
-#insu{
-    font-size: 40px;
-    padding: 8% 17%;
-    background-color: rgba(13, 146, 1, 0.329);
+.contenedor img:hover{
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 .texto{
-    visibility: hidden;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  font-family:'Courier New', Courier, monospace;
 }
 
 footer {
@@ -150,9 +138,9 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(42, 146, 94);
+    background-color: rgb(39, 134, 151);
     text-align: left;
-    height: 7%;
+    height: 6%;
     color: white;
     font-size: 18px;
     padding: auto;
@@ -202,13 +190,15 @@ footer .la{
 }
 
 footer .la:hover{
-  background-color:#4CAF50;
+  color: aqua;
 }
 #argumento{
+  padding: 5px;
+  background-color: rgba(39, 134, 151, 0.123);
     text-align: center;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: rgb(42, 146, 94);
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: rgb(39, 134, 151);
     border-style: solid;
     border-width: 5px;
     width: 50%;
@@ -220,7 +210,7 @@ footer .la:hover{
     text-align: center;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: rgb(42, 146, 94);
+    border: rgb(39, 134, 151);
     border-style: solid;
     border-width: 5px;
     width: 60%;
@@ -236,6 +226,7 @@ form {
   }
   
   .container {
+    margin-bottom: 20px;
     border: 1px solid #ddd;
     padding: 20px;
     width: 350px;
@@ -261,13 +252,16 @@ form {
     box-sizing: border-box;
   }
   
-  button {
-    background-color: #4CAF50;
+  #button {
+    background-color: rgb(39, 134, 151);;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    padding: 14px 20px;
+    padding: 10px 16px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
     width: 100%;
   }
   
@@ -340,14 +334,14 @@ form {
         border-radius: 5px;
         outline: none;
         color: white;
-        padding: 14px 25px;
-        background-color:#4CAF50;
+        padding: 12px 22px;
+        background-color:rgb(39, 134, 151);;
         font-family: inherit;
         margin: 0;
       }
       
       .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color:#00a806;
+        background-color:rgb(39, 134, 151);;
       }
       
       .dropdown-content {
@@ -394,8 +388,9 @@ form {
     text-align: center;
     place-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
+
 .gmap_canvas{
     overflow: hidden;
     background: none !important;
