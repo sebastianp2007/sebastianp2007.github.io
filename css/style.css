@@ -111,12 +111,14 @@ header nav a:hover {
 }
 
 .contenedor{
+  text-decoration: none;
   text-align: center;
   transition: 0,7s;
   opacity: 0,8;
   width: 40%;
   margin: 2%;
 }
+
 .contenedor img{
   width: 50%;
   height: auto;
@@ -197,46 +199,109 @@ footer .la:hover{
 #argumento{
   padding: 5px;
   background-color: rgba(39, 134, 151, 0.123);
-    text-align: center;
-    font-size: 25px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: rgb(39, 134, 151);
-    border-style: solid;
-    border-width: 5px;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 5%;
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: rgb(39, 134, 151);
+  border-style: solid;
+  border-width: 5px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#hacemos{
+  align-items: center;
+  font-size: 35px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#hacemos p{
+  padding-left: 20px;
+}
+
+.hacer{
+  display: flex;
+}
+.hacer img{
+  width: 40%;
+  height: auto;
+  padding: 5%;
+}
+
+.hacer2{
+  display: flex;
+}
+.hacer2 img{
+  width: 40%;
+  height: auto;
+  padding: 5%;
+}
+
+.hacer2 .topografia p{
+  padding: 20px;
+}
+
+.hacer3{
+  display: flex;
+}
+.hacer3 img{
+  width: 35%;
+  height: 50%;
+  padding: 5%;
+}
+
+.topografia{
+  align-items: center;
+  font-size: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+
+.topografia li{
+  padding: 12px;
+  font-size: 20px;
 }
 
 #ubicacion{
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: rgb(39, 134, 151);
-    border-style: solid;
-    border-width: 5px;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 1%;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: rgb(39, 134, 151);
+  border-style: solid;
+  border-width: 5px;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1%;
+  text-align: center;
 }
 
 form {
-    font-family: Arial, sans-serif;
-    margin-top: 10%;
-    place-items: center;
-    display: grid;
+  margin-top: 10%;
+  place-items: center;
+  display: grid;
+  font-family: Arial, sans-serif;
   }
   
   .container {
-    margin-bottom: 20px;
     border: 1px solid #ddd;
+    margin-bottom: 20px;
     padding: 20px;
     width: 350px;
   }
   
   h1 {
-    text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
   }
   
   label {
@@ -405,4 +470,33 @@ form {
     text-align: center;
     height: 600px;
     width: 100%;
+}
+
+.lineas{
+  width: 100%;  
+  height: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.lineas img{
+  width: 30%;
+  padding: 5%;
+}
+
+#rojo{
+  background-color: rgba(228, 15, 15, 0.59);
+}
+
+#naranja{
+  background-color: rgba(228, 143, 15, 0.59);
+}
+
+#verde{
+  background-color: rgba(4, 182, 43, 0.59);
+}
+
+#gris{
+  background-color: rgba(98, 102, 98, 0.59);
 }
