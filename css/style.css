@@ -35,8 +35,9 @@ header nav {
 }
 
 #imagen{
-    margin: 5px;
     float: left;
+    width: 6%;
+    height: auto;
 }
 
 #fondo{
@@ -45,13 +46,11 @@ header nav {
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: rgba(39, 134, 151, 0.562);
 }
 
 #fondo img{
-  width: 40%;
+  width: 30%;
   height: auto;
-  margin: auto;
 }
 
 #ser{
@@ -134,7 +133,7 @@ header nav a:hover {
   text-decoration: none;
   font-size: 35px;
   color: rgb(0, 0, 0);
-  font-family:'Courier New', Courier, monospace;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer {
@@ -238,9 +237,9 @@ footer .la:hover{
   display: flex;
 }
 .hacer2 img{
-  width: 40%;
+  width: 30%;
   height: auto;
-  padding: 5%;
+  padding: 4%;
 }
 
 .hacer2 .topografia p{
@@ -251,9 +250,9 @@ footer .la:hover{
   display: flex;
 }
 .hacer3 img{
-  width: 35%;
-  height: 50%;
-  padding: 5%;
+  width: 30%;
+  height: auto;
+  padding: 4%;
 }
 
 .topografia{
@@ -337,6 +336,17 @@ form {
   }
   
   @media (max-width: 500px) {
+    header .icono{
+      width: 0;
+      padding: 0;
+      margin: 0;
+      height: 0;
+    }
+    header .icono a{
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
     .container {
       width: 80%;
       height: auto;
@@ -353,9 +363,8 @@ form {
     header {
         width: 100%;
         padding-left: 5%;
-        padding-top: 10px;
-        padding-bottom: 10px;
         position: inherit;
+        display: inline;
     }
     header nav{
     float: left;
@@ -389,11 +398,12 @@ form {
       }
       
       .dropdown {
-        float: left;
         padding: 20px;
         overflow: hidden;
         align-items: center;
+        width: 20%;
       }
+
       
       .dropdown .dropbtn {
         display: block;
@@ -405,6 +415,11 @@ form {
         background-color:rgb(39, 134, 151);;
         font-family: inherit;
         margin: 0;
+      }
+
+      .dropdown .dropbtn :hover{
+        cursor: pointer;
+        background-color: aqua;
       }
       
       .navbar a:hover, .dropdown:hover .dropbtn {
@@ -433,13 +448,86 @@ form {
       }
       
       .dropdown-content a:hover {
-        background-color:#4CAF50;
+        background-color:rgb(39, 134, 151);;
         color: #000000;
       }
       
       .dropdown:hover .dropdown-content {
         display: block;
         height: auto;
+      }
+      .correo{
+        font-size: 22px !important;
+      }
+      .hacer{
+        display: block;
+        margin-bottom: 10%;
+      }
+      #hacemos{
+        font-size: 20px;
+        padding-right: 20px;
+        width: 100%;
+      }
+      .hacer img{
+        width: 90%;
+        padding: 0 30px;
+      }
+      #figuras{
+        display: block;
+      }
+      .texto{
+        font-size: 20px;
+      }
+      #texto h1{
+        font-size: 35px;
+      }
+      .figuras2{
+        margin-bottom: 20%;
+      }
+      .civil-1{
+        display: block !important;
+        text-align: center;
+      }
+      .civil-1 img{
+        width: 10%;
+        height: 20%;
+      }
+      .civil-1 .topografia{
+        font-size: 15px;
+      }
+      .hacer3 .topografia{
+        margin-bottom: 10%;
+      }
+      .hacer3 .topografia li,h3{
+        font-size: 15px;
+      }
+      .hacer2{
+        display: block !important;
+        text-align: center;
+        width: 100%;
+      }
+      .hacer2 .topografia{
+        font-size: 16px;
+        padding: 0;
+      }
+      .hacer2 .topografia p{
+        padding: 0;
+        margin: 0;
+      }
+      .hacer3{
+        display: block;
+        text-align: center;
+      } 
+      .hacer3 .topografia p{
+        padding: 0;
+        margin: 0;
+      }
+      .topografia{
+        width: 80%;
+      }
+      #comple{
+        display: block !important;
+        margin-bottom: 10%;
       }
   }
 
@@ -481,22 +569,30 @@ form {
 }
 
 .lineas img{
-  width: 30%;
-  padding: 5%;
+  width: 20%;
+  padding-top: 5%;
 }
 
-#rojo{
-  background-color: rgba(228, 15, 15, 0.59);
+#comple{
+  display: flex;
 }
 
-#naranja{
-  background-color: rgba(228, 143, 15, 0.59);
+#comple img{
+  width: 40%;
+  height: auto;
+  padding: 2%;
+  margin-bottom: 5%;
 }
 
-#verde{
-  background-color: rgba(4, 182, 43, 0.59);
+.civil-1{
+  display: flex;
 }
 
-#gris{
-  background-color: rgba(98, 102, 98, 0.59);
+.civil-1 img{
+  width: 50%;
+  padding: 5px;
+}
+
+.civil-1 .topografia p{
+  padding: 0 5%;
 }
