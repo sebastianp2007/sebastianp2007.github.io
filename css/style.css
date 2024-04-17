@@ -336,12 +336,7 @@ form {
   }
   
   @media (max-width: 500px) {
-    header .icono{
-      width: 0;
-      padding: 0;
-      margin: 0;
-      height: 0;
-    }
+
     header .icono a{
       width: 0;
       height: 0;
@@ -358,7 +353,12 @@ form {
     }
     footer{
         padding: 0 12px;
-        margin-top: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .la,footer p{
+      font-size: 15px !important;
     }
     header {
         width: 100%;
@@ -398,15 +398,15 @@ form {
       }
       
       .dropdown {
-        padding: 20px;
+        margin: 10px;
         overflow: hidden;
         align-items: center;
-        width: 20%;
+        width: 40%;
       }
 
       
       .dropdown .dropbtn {
-        display: block;
+        display: flex;
         font-size: 18px;  
         border-radius: 5px;
         outline: none;
@@ -414,7 +414,6 @@ form {
         padding: 12px 22px;
         background-color:rgb(39, 134, 151);;
         font-family: inherit;
-        margin: 0;
       }
 
       .dropdown .dropbtn :hover{
