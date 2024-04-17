@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagenes/FOTO_PERFIL.png" type="image/x-icon">
+    <title>Serin</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="icono"><a href="../index.html"><img src="../imagenes/FOTO_PERFIL.png" id="imagen" alt="" width="100" height="70" /></a></div>
+    <div class="dropdown">
+      <button class="dropbtn">MENU
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <nav class="dropdown-content">
+            <a class="la" href="../index.html" >Inicio</a>
+        <a class="la" href="lineas.html">Lineas de Negocio</a>
+        <a class="la" href="nosotros.html">Nosotros</a>    
+        <a class="la" href="ubicacion.html">Contacto</a>
+        </nav>
+
+</header> 
+
+
+      <form id="form">
+        <div class="container">
+        <div class="titulo">
+          <img src="../imagenes/FOTO_PERFIL.png" alt=""><h1>SERIN</h1>
+        </div>
+        
+        <input type="text" name="name" placeholder="Nombre Completo" required>
+        <input type="email" name="email" placeholder="Correo Electronico" required>
+        <input type="number" name="phone" placeholder="Telefono" required>
+
+        <label for="Hora">Hora</label>
+        <input type="time" id="name" name="time" required>
+      
+        <label for="fecha">Fecha</label>
+        <input type="date" id="email" name="date" required>
+      
+        <input type="text" name="Mensaje" placeholder="Mensaje (opcional)">
+
+        <input type="submit" id="button" value="ENVIAR" >
+        </div>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+        emailjs.init('bcTJN8cbJ02cpBmeu')
+        </script>
+      </form>
+
+      <footer><a class="la" href="cita.html">Asignar cita</a>
+        <div>
+        <p>Siguenos en nuestras redes</p>
+        <a href="https://www.facebook.com/profile.php?id=61558178485167&mibextid=JRoKGi" target="_blank"><img src="../logo/facebook.png" alt=""></a> 
+        <a href="https://www.instagram.com/serin.col?igsh=MTJzMHRpbHdkZ3M2dQ==" target="_blank"><img src="../logo/instagram.png" alt=""></a>
+        <a href="https://www.linkedin.com/company/103169371/admin/feed/posts/?feedType=following" target="_blank"><img src="../logo/linkedin.png" alt=""></a>
+    </div></footer>
+
+    
+<script>
+      const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_iwpfvst';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'ENVIAR';
+      alert('Mensaje Enviado!');
+    }, (err) => {
+      btn.value = 'ENVIAR';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+</body>
+</html>
