@@ -1,0 +1,21 @@
+#fondo{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.lineas{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+  height: 1px;
+  width: 1px;
+}
+
+to {
+  height: auto;
+  width: 100%;
+}
+}
