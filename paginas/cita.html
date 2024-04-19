@@ -41,15 +41,15 @@
         <label for="fecha">Fecha</label>
         <input type="date" id="email" name="date" required>
       
-        <input type="text" name="Mensaje" placeholder="Mensaje (opcional)">
+        <input type="text" name="mensaje" placeholder="Mensaje (opcional)">
 
         <input type="submit" id="button" value="ENVIAR" >
         </div>
         <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
         <script type="text/javascript">
-        emailjs.init('bcTJN8cbJ02cpBmeu')
+        emailjs.init('sqkd78YohX-DaX8KO')
         </script>
       </form>
 
@@ -63,7 +63,7 @@
 
     
 <script>
-      const btn = document.getElementById('button');
+  const btn = document.getElementById('button');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
@@ -72,7 +72,7 @@ document.getElementById('form')
    btn.value = 'Enviando...';
 
    const serviceID = 'default_service';
-   const templateID = 'template_iwpfvst';
+   const templateID = 'template_aoqjbme';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
@@ -83,6 +83,7 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
 </script>
 </body>
 </html>
