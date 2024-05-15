@@ -6,23 +6,34 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animacion.css">
     <link rel="shortcut icon" href="../imagenes/FOTO_PERFIL.png" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="../js/main.js"></script>
     <title>Serin</title>
 </head>
 <body>
-    <header class="navbar">
-        <div class="icono"><a href="../index.html"><img src="../imagenes/FOTO_PERFIL.png" id="imagen" alt="" width="100" height="70" /></a></div>
-        <div class="dropdown">
-          <button class="dropbtn">MENU
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <nav class="dropdown-content">
-            <a class="la" href="../index.html" >Inicio</a>
-            <a class="la" href="lineas.html">Lineas de Negocio</a>
-            <a class="la" href="#">Nosotros</a>    
-            <a class="la" href="ubicacion.html">Contacto</a>
-            </nav>
+    <header>
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-list2"></span>Menú</a>
+		</div>
 
-    </header> 
+		<nav>
+			<ul>
+                <a href="../index.html" class="icono"><span ></span><img src="../imagenes/FOTO_PERFIL.png" id="imagen" alt=""></a>
+				<li><a href="../index.html"><span class="icon-house"></span>Inicio</a></li>
+				<li><a href="nosotros.html"><span class="icon-suitcase"></span>Nosotros</a></li>
+				<li class="submenu">
+					<a href="lineas.html"><span class="icon-rocket"></span>Linea de negocios<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="topografia.html">Topográfica<span class="icon-dot"></span></a></li>
+						<li><a href="civil.html">Civil<span class="icon-dot"></span></a></li>
+						<li><a href="ambiental.html">Ambiental<span class="icon-dot"></span></a></li>
+                        <li><a href="servicios.html">Servicios Complementarios<span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+				<li><a href="contacto.html"><span class="icon-mail"></span>Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
     <div id="fondo"><img src="../imagenes/ORIGINAL.png" alt="" width="100%" height="100%"></div>
 
     <div id="texto">Acerca de<br> <p id="ser">SERIN SAS</p></div>
@@ -42,7 +53,9 @@
         <a href="https://www.facebook.com/profile.php?id=61558178485167&mibextid=JRoKGi" target="_blank"><img src="../logo/facebook.png" alt=""></a> 
         <a href="https://www.instagram.com/serin.col?igsh=MTJzMHRpbHdkZ3M2dQ==" target="_blank"><img src="../logo/instagram.png" alt=""></a>
         <a href="https://www.linkedin.com/company/103169371/admin/feed/posts/?feedType=following" target="_blank"><img src="../logo/linkedin.png" alt=""></a>
-    </div></footer>
+    </div>
+    <a href="https://wa.me/573136542426?text=buenas%20tardes%20quiero%20comunicarme%20con%20un%20asesor%20de%20Serin%20s.a.s" class="habla">Habla con otros</a>
+    </footer>
 
 </body>
 </html>
