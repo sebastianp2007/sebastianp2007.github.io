@@ -1,0 +1,514 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+#fondo{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.lineas{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+#imagen{
+    width: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: -20px;
+}
+#fondo{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#ser{
+  color: rgb(39, 134, 151);
+  margin: 0;
+}
+
+#texto{
+  padding: 2%;
+  text-align: center;
+  font-size: 35px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+@keyframes slidein {
+from {
+  height: 1px;
+  width: 1px;
+}
+
+to {
+  height: auto;
+  width: 100%;
+}
+}
+/*header*/
+.menu_bar {
+	display:none;
+}
+header {
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+header nav {
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    float: left;
+    display: flex;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+
+header nav a{
+    text-decoration: none;
+    overflow-y: hidden;
+    font-family: Mallory book;
+    font-size: large;
+    font-size: 20px;
+    color: #808080;
+}
+
+.palo{
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: auto;
+}
+
+.baner{
+    padding: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.c{
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.img{
+    width: 40px;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul li:hover {
+	background:rgb(225, 225, 225);
+}
+
+header nav ul li a {
+	color: #808080;
+	display:block;
+	text-decoration:none;
+	padding: 5px;
+}
+
+header nav ul li a span {
+	margin-right:10px;
+}
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:rgb(39, 134, 151);
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+
+    .icono{
+    width: 0%;
+    }
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:rgb(39, 134, 151);
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		width: 80%;
+		height: calc(90% - 70px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		display: none;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:1px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+}
+
+/*buscador*/
+
+
+/*carrucel*/
+
+.slider input{
+    visibility: hidden;
+    display: none;
+}
+
+.buttons{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    gap: 10px;
+}
+
+.buttons label{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition:  300ms ease-in-out;
+}
+
+.buttons label:hover{
+    opacity: 1;
+}
+
+.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.slider input:nth-child(3):checked ~ .buttons label:nth-child(3),
+.slider input:nth-child(4):checked ~ .buttons label:nth-child(4)
+{
+    opacity: 1;
+    scroll-margin: 1.2;
+    width: 40px;
+}
+
+.content{
+    position: relative;
+    width: 400vw;
+    display: flex;
+    transition: 400ms ease-in-out;
+}
+
+
+
+.firstslide,.secondslide,.thirdslide,.fourslide{
+    position: relative;
+    width: 100vw;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstslide{
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: 100% 100%;
+    text-align: right;
+}
+
+.secondslide{
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: 100% 100%;
+}
+
+.thirdslide{
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: 100% 100%;
+}
+
+.fourslide{
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: 100% 100%;
+}
+
+.slider input:nth-child(1):checked ~ .content{
+    left: 0;
+    animation: slide 25s alternate ease-in-out;
+}
+
+.slider input:nth-child(2):checked ~ .content{
+    left: -100vw;
+}
+
+.slider input:nth-child(3):checked ~ .content{
+    left: -200vw;
+}
+
+.slider input:nth-child(4):checked ~ .content{
+    left: -300vw;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    30%{
+        left: 0;
+    }
+
+    35%{
+        left: -100vw;
+    }
+    50%{
+        left: -100vw;
+    }
+
+    55%{
+        left: -200vw;
+    }
+    75%{
+        left: -200vw;
+    }
+    80%{
+        left: -200vw;
+    }
+    95%{
+        left: -200vw;
+    }
+}
+
+.banerp{
+    padding: 2%;
+    text-align: left;
+    font-size: 25px;
+    font-family: Mallory book;
+    width: 100%;
+    margin-left: 55%;
+    margin-right: 4,5%;
+    color: #FFF;
+}
+
+.banerp h2{
+    font-family: mallory bi;
+    font-size: 45px;
+}
+
+.banerp p{
+    font-family: mallory l;
+    font-size: 25px;
+}
+
+.firstslide img{
+    padding: 2%;
+    width: 50%;
+}
+
+.secondslide img{
+    padding: 2%;
+    width: 50%;
+}
+
+.thirdslide img{
+    padding: 2%;
+    width: 50%;
+}
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 55px;
+    bottom:25px;
+    right:25px;
+    background-image: url("../logo/whatsapp.png");
+    border-radius:50px;
+    text-align:center;
+}
+
+.btn-wsp:hover{
+    transition: 0.9s;
+    background-image: url("../logo/whatsapp\ 2.png");
+}
+
+.servicios{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    display: block;
+    font-size: 45px;
+}
+
+.servicios img{
+    width: 100%;
+    height: auto;
+}
+
+.azul{
+    font-family: Mallory bi;
+    color: #0E9FD8;
+}
+
+.azul2{
+    font-family: Mallory l;
+    color: #0E9FD8;
+}
+.contenedor{
+    width: 100%;
+    margin-bottom: -4%;
+    background-color: #FFF;
+    display: flex;
+}
+
+.contenedor2{
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+}
+
+.trabajo{
+    width: 20%;
+    height: 300px;
+    margin: 3%;
+    color: rgb(230, 10, 10);
+    background-color: aqua;
+    text-align: center;
+    overflow: hidden;
+}
+
+.textos{
+    width: 20%;
+    height: 70px;
+    margin: 3%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.trabajo img{
+    width: 100%;
+    height: auto;
+}
+
+.trabajo:hover{
+    background-color: #0e9fd8d4;
+}
+
+.texto{
+    color: #808080;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.larga{
+    width: 180% !important;
+    margin-left: -25%;
+}
+
+@font-face {
+    font-family: Mallory book;
+    src: url("../letras/Mallory\ Book.ttf");
+}
+
+@font-face {
+    font-family: Mallory l;
+    src: url("../letras/Mallory\ Light.ttf");
+}
+
+@font-face {
+    font-family: Mallory bi;
+    src: url("../letras/Mallory\ Black\ Italic.ttf");
+}
