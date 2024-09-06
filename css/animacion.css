@@ -98,7 +98,9 @@ header nav a{
 
 @media screen and (max-width: 1400px) {
 	.baner{
-        width: min-content;
+        font-size: 18px;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
