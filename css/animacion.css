@@ -122,7 +122,7 @@ header nav a{
     cursor: pointer;
     z-index: 1;
     border-radius: 12px;
-    border: 2px solid #808080;
+    border: 2px solid white;
 }
 
 .buttons label:hover{
@@ -134,7 +134,7 @@ header nav a{
 .slider input:nth-child(3):checked ~ .buttons label:nth-child(3),
 .slider input:nth-child(4):checked ~ .buttons label:nth-child(4)
 {
-    background-color: #999999;
+    background-color: white;
     border: hidden;
     width: 14px;
     height: 14px;
@@ -160,24 +160,28 @@ header nav a{
 }
 
 .firstslide{
-    background-image: url("../imagenes/fondo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../imagenes/1.JPG");
     background-size: 100% 100%;
     text-align: right;
 }
 
 .secondslide{
-    background-image: url("../imagenes/fondo.jpg");
-    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url("../imagenes/2.png");
+    background-size: 100% auto;
+    background-position: 0 25%;
 }
 
 .thirdslide{
-    background-image: url("../imagenes/fondo.jpg");
-    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../imagenes/3.jpeg");
+    background-size: 100% auto;
+    background-position: 0 35%;
 }
 
 .fourslide{
-    background-image: url("../imagenes/fondo.jpg");
-    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../imagenes/4.png");
+    background-size: 100% auto;
+    background-position: 0 35%;
 }
 
 .slider input:nth-child(1):checked ~ .content{
@@ -443,7 +447,7 @@ header nav a{
 #larga img{
     width: max-content;
     max-width: 400px;
-    margin-left: -25%;
+    margin-left: -15%;
 }
 
 #foto img{
@@ -580,9 +584,10 @@ header nav a{
 }
 
 .iconos3 p{
+    font-family: Mallory book;
     color: #ffffff;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -596,7 +601,6 @@ header nav a{
     width: 100%;
     height: 450px;
     display: flex;
-    margin-top: 2%;
 }
 
 .button-container{
@@ -608,7 +612,7 @@ header nav a{
     display: block;
     text-align: center;
     justify-content: center;
-    padding: 50px;
+    padding: 2% 4%;
     overflow: hidden;
 }
 .leyendo a{
@@ -653,7 +657,7 @@ header nav a{
     height: 350px;
     overflow: hidden;
     margin-right: 2%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 video{
@@ -695,14 +699,14 @@ footer{
 .arriba{
     font-family: Mallory book;
     color: #FFF;
-    font-size: 22px;
+    font-size: 18px;
     padding-top: 15px;
     width: 25%;
 }
 
 .arriba p{
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .contacto{
@@ -738,6 +742,7 @@ footer{
     padding-top: 15px;
     padding-left: 15px;
     font-size: 10px;
+    font-family: Mallory book;
     color: #FFF;
 }
 
@@ -752,6 +757,10 @@ footer{
     cursor: pointer;
 }
 /*carrucel 2*/
+
+body{
+    overflow-x: hidden;
+}
 
 .slide {
     position: relative;
@@ -771,17 +780,20 @@ footer{
 }
 
 .slide-item{
+    width: 100%;
+    justify-content: center;
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
     display: flex;
-    padding: 0 40px;
 }
 
 .slide-item #p1 {
+    align-items: center;
+    justify-content: center;
     display: block;
-    height: 360px;
+    height: 300px;
     max-width: 100%;
     width: 25%;
     margin: 0 55px;
@@ -789,8 +801,9 @@ footer{
 }
 
 .slide-item img{
-    height: 260px;
-    width: 400px;
+    align-content: center;
+    height: auto;
+    width: 80%;
 }
 
 .slide-item p{
@@ -940,11 +953,12 @@ footer{
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: block;
-    padding: 12px 10px;
+    padding: 12px 8px;
+    font-size: 17px;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {font-weight: bold;font-size: 22px;}
+  .dropdown-content a:hover {font-weight: bold;}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
@@ -1000,6 +1014,10 @@ footer{
     text-align:start;
 }
 
+.somos p{
+    padding-bottom: 5%;
+}
+
 .nosotrosimg img{
     width: auto;
     height: 300px;
@@ -1012,6 +1030,41 @@ footer{
 
 .somos ul li::marker {
     color:#0E9FD8; /* Cambia el color de los puntos a rojo */
+}
+
+.texton ul li::marker{
+    color: #0E9FD8;
+}
+
+.texton ul li{
+    font-size: 18px;
+    font-family: Mallory book;
+}
+
+.somos h3{
+    margin-top: 3%;
+    color: #0E9FD8;
+    font-family: Mallory b;
+}
+
+.titulon h2{
+    font-family: Mallory b;
+    color: #0E9FD8;
+}
+
+.inge{
+    font-family: Mallory book;
+    color: #0E9FD8;
+}
+
+.descarga{
+    text-decoration: none;
+    color: #0E9FD8;
+    font-family: Mallory b;
+}
+
+.descarga:hover{
+    color: #0871A5;
 }
 
 @font-face {
