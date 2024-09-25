@@ -17,13 +17,6 @@
   margin: 0;
 }
 
-#texto{
-  padding: 2%;
-  text-align: center;
-  font-size: 35px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
 @keyframes slidein {
 from {
   height: 1px;
@@ -603,6 +596,12 @@ header nav a{
     display: flex;
 }
 
+.estudios2{
+    width: 100%;
+    height: 550px;
+    display: flex;
+}
+
 .button-container{
     overflow: hidden;
 }
@@ -615,12 +614,22 @@ header nav a{
     padding: 2% 4%;
     overflow: hidden;
 }
-.leyendo a{
+.leyendo2{
+    width: 50%;
+    height: 550px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 6% 2% 3%;
+    overflow: hidden;
+}
+.leyendo a,.leyendo2 a{
     font-family: MALLORY l;
     color: #0E9FD8;
 }
 
-.leyendo h1{
+.leyendo2 h1,.leyendo h1{
     font-family: MALLORY b;
     font-size: 40px;
     padding-left: 40px;
@@ -628,7 +637,7 @@ header nav a{
     color: #0E9FD8;
 }
 
-.leyendo p{
+.leyendo p,.leyendo2 p{
     font-family: Mallory book;
     font-size: 17px;
     padding-top: 20px;
@@ -660,9 +669,22 @@ header nav a{
     margin-top: 2%;
 }
 
-video{
+.video2{
+    width: 45%;
+    height: 550px;
+    overflow: hidden;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.control{
     width: 100%;
     height: 350px;
+}
+
+.control2{
+    width: 100%;
+    height: 100%;
 }
 
 .servicios3{
@@ -1015,7 +1037,8 @@ body{
 }
 
 .somos p{
-    padding-bottom: 5%;
+    padding-bottom: 4%;
+    text-align: justify;
 }
 
 .nosotrosimg img{
@@ -1041,13 +1064,13 @@ body{
     font-family: Mallory book;
 }
 
-.somos h3{
+.somos h4{
     margin-top: 3%;
     color: #0E9FD8;
     font-family: Mallory b;
 }
 
-.titulon h2{
+.titulon h3{
     font-family: Mallory b;
     color: #0E9FD8;
 }
@@ -1065,6 +1088,65 @@ body{
 
 .descarga:hover{
     color: #0871A5;
+}
+
+.noticias{
+    display: flex;
+    width: 100%;
+}
+
+.not{
+    width: 60%;
+    text-align: center;
+    font-family: Mallory b;
+    color: #0E9FD8;
+    font-size: 50px;
+}
+
+.otras{
+    width: 40%;
+    font-family: Mallory book;
+}
+
+.otras a{
+    text-decoration: none;
+    color:#0E9FD8;
+    margin: 0 8%;
+    font-size: 20px;
+}
+
+.otras a:hover{
+    color: #0871A5;
+}
+
+.imgnosotros{
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nosotros{
+    width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    margin-top: -10%;
+}
+.valor{
+    width: auto;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+
+.valores{
+    width: 50%;
+    height: auto;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 @font-face {
