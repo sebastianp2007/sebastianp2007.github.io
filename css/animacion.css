@@ -263,7 +263,7 @@ header nav a{
     width:60px;
     height:60px;
     line-height: 55px;
-    bottom:25px;
+    bottom:50px;
     right:25px;
     background-image: url("../logo/whatsapp.png");
     border-radius:50px;
@@ -706,19 +706,20 @@ header nav a{
 
 footer{
     width: 100%;
-    height: 250px;
+    margin-bottom: 0;
+    height: 190px;
     display: flex;
     background-color: #0E9FD8;
 }
 
 .logo{
     width: 25%;
-    justify-content: center;
+    max-height: 180px;
     align-items: center;
     overflow: hidden;
 }
 .logo img{
-    width: 80%;
+    width: 60%;
     padding: 20px;
     margin-top: -40px;
 }
@@ -727,7 +728,6 @@ footer{
     font-family: Mallory book;
     color: #FFF;
     font-size: 18px;
-    padding-top: 15px;
     width: 25%;
 }
 
@@ -745,8 +745,7 @@ footer{
     font-family: Mallory book;
     color: #FFF;
     font-size: 18px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 15px 0;
 }
 
 .contacto img{
@@ -760,14 +759,15 @@ footer{
     margin-left: 5%;
     overflow: hidden;
     background-image: url("../imagenes/PAGINA\ WEB\ SERIN\ PREW-12.png");
-    background-size: 250px 100%;
+    background-size: 200px 100%;
     background-position: 70px;
     background-repeat: no-repeat;
 }
 .terminos{
     height: 60%;
     padding-top: 15px;
-    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
     font-size: 10px;
     font-family: Mallory book;
     color: #FFF;
