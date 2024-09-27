@@ -646,6 +646,7 @@ header nav a{
 }
 
 .leyendo p,.leyendo2 p{
+    text-align: justify;
     font-family: Mallory book;
     font-size: 17px;
     padding-top: 20px;
