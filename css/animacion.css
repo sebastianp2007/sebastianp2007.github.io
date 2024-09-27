@@ -621,13 +621,16 @@ header nav a{
 }
 .leyendo2{
     width: 50%;
-    height: 550px;
     display: block;
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 6% 2% 3%;
+    padding: 2% 2% 3%;
     overflow: hidden;
+}
+
+#sep{
+    padding: 7% 2% 3%;
 }
 .leyendo a,.leyendo2 a{
     font-family: MALLORY l;
