@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/animacion.css">
+    <link rel="shortcut icon" href="../imagenes/FOTO_PERFIL.png" type="image/x-icon">
+    <title>Nosotros</title>
+</head>
+<body>
+    <header>
+		<nav>
+            <a href="../index.html"><img src="../imagenes/ORIGINAL.png" id="imagen"></a>
+            <div class="dropdown" id="drop">
+                <a href="#" class="baner" id="baner">¿QUIENES SOMOS?</a>
+                <div class="dropdown-content">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="valores.html">Valores Corporativos</a>
+                    <a href="sig.html">Política del Sistema de Gestión Integral (SIG)</a>
+                    <a href="tip.html">Política de Tratamiento de La Información Personal.</a>
+                </div>
+              </div>
+            <a class="palo">|</a>
+			<a href="servicios.html" class="baner" id="baner2">SERVICIOS</a>
+            <a class="palo">|</a>
+			<div class="dropdown" id="drop2">
+                <a href="todas.html" class="baner" id="baner3">NOTICIAS</a>
+                <div class="dropdown-content">
+                    <a href="recientes.html">Recientes</a>
+                    <a href="relevantes.html">Ofertas Laborales</a>
+                    <a href="todas.html">Todas</a>
+                </div>
+                </div>
+            <a class="palo">|</a>
+			<a href="clientes.html" class="baner" id="baner4">NUESTROS CLIENTES</a>
+            <a class="palo">|</a>
+            <div class="search-container">
+                <button class="search-btn" onclick="toggleSearch()">
+                    <img src="../imagenes/lupa.png" alt="Lupa" class="search-icon">
+                </button>
+                <input type="text" class="search-input" placeholder="Buscar...">
+            </div>
+            <div class="dropdown2">
+                <a class="c" href="mailto:sebastianpalaciom01@gmail.com"><img src="../imagenes/correo.png" class="img"></a>
+                    <div class="dropdown-content2">
+                        <div class="datos">
+                            <img src="../imagenes/correo-electronico-blanco.png" alt="">
+                            <p>Escribe tus datos y te contáctaremos</p>
+
+                        </div>
+                        <form id="form" class="campos">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="name"><br>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="number" name="phone" class="telefono"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="ciudad">Ciudad:</label><br>
+                        <input type="text" id="ciudad" name="city"><br>
+                        <label for="Comentario">Comentario:</label><br>
+                        <textarea name="comentario" id="comentario"></textarea><br>
+                        <input type="submit" id="button" value="ENVIAR" >
+                        </form>
+
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                        <script type="text/javascript">
+                            emailjs.init('bcTJN8cbJ02cpBmeu')
+                          </script>
+                        
+                    </div>
+            </div>
+		</nav>
+	</header>
+
+    <div class="imgnosotros">
+        <img src="../imagenes/Nosotros.jpeg" class="nosotros">
+    </div>
+
+    <div class="nosotros2">
+        <div class="texton">
+            <div class="titulon"><h3>Nosotros</h3></div>
+            <div class="somos"><p>En SERIN SAS, nos especializamos en brindar servicios de Ingeniería Civil, Topográfica y Ambiental en tierra y mar; además de una gama de servicios complementarios para múltiples sectores. 
+                El recurso humano es el eje central de SERIN, su profesionalismo nos ha permitido consolidar experiencia e impulsar el desarrollo sostenible mediante la innovación, calidad y valor agregado en cada una de nuestras líneas de negocios, contribuyendo al bienestar de nuestros clientes y de las comunidades donde ejecutamos nuestros proyectos.</p>
+                <h4>MISION</h4>
+                <p>Proveer soluciones de ingeniería en la rama civil, topográfica y ambiental en tierra y mar, entregando servicios de alta calidad que cumplan con los estándares más exigentes del mercado. Trabajamos en estrecha colaboración con nuestros clientes para desarrollar soluciones que cumplen con sus necesidades.</p>
+                <h4>VISION</h4>
+                <p>Ser reconocidos como líderes en el sector civil, topográfico, y ambiental a nivel nacional en tierra y mar, destacándonos por nuestra capacidad técnica, innovación y un enfoque continuo en la excelencia operativa y el cuidado del medio ambiente. </p>
+            </div>
+        </div>
+
+        <div class="nosotrosimg"><img src="../imagenes/FOTO_PERFIL.png" alt=""></div>
+    </div>
+    <script src="../js/email.js"></script>
+    <script src="../js/lupa.js"></script>
+</body>
+</html>
