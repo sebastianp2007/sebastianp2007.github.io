@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/animacion.css">
+    <link rel="shortcut icon" href="../imagenes/FOTO_PERFIL.png" type="image/x-icon">
+    <title>Valores Corporativos</title>
+</head>
+<body>
+    <header>
+		<nav>
+            <a href="../index.html"><img src="../imagenes/ORIGINAL.png" id="imagen"></a>
+            <div class="dropdown" id="drop">
+                <a href="#" class="baner" id="baner">¿QUIENES SOMOS?</a>
+                <div class="dropdown-content">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="valores.html">Valores Corporativos</a>
+                    <a href="sig.html">Política del Sistema de Gestión Integral (SIG)</a>
+                    <a href="tip.html">Política de Tratamiento de La Información Personal.</a>
+                </div>
+              </div>
+            <a class="palo">|</a>
+			<a href="servicios.html" class="baner" id="baner2">SERVICIOS</a>
+            <a class="palo">|</a>
+			<div class="dropdown" id="drop2">
+                <a href="todas.html" class="baner" id="baner3">NOTICIAS</a>
+                <div class="dropdown-content">
+                    <a href="recientes.html">Recientes</a>
+                    <a href="relevantes.html">Ofertas Laborales</a>
+                    <a href="todas.html">Todas</a>
+                </div>
+                </div>
+            <a class="palo">|</a>
+			<a href="clientes.html" class="baner" id="baner4">NUESTROS CLIENTES</a>
+            <a class="palo">|</a>
+            <div class="search-container">
+                <button class="search-btn" onclick="toggleSearch()">
+                    <img src="../imagenes/lupa.png" alt="Lupa" class="search-icon">
+                </button>
+                <input type="text" class="search-input" placeholder="Buscar...">
+            </div>
+            <div class="dropdown2">
+                <a class="c" href="mailto:sebastianpalaciom01@gmail.com"><img src="../imagenes/correo.png" class="img"></a>
+                    <div class="dropdown-content2">
+                        <div class="datos">
+                            <img src="imagenes/correo-electronico-blanco.png" alt="">
+                            <p>Escribe tus datos y te contáctaremos</p>
+
+                        </div>
+                        <form id="form" class="campos">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="name"><br>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="number" name="phone" class="telefono"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="ciudad">Ciudad:</label><br>
+                        <input type="text" id="ciudad" name="city"><br>
+                        <label for="Comentario">Comentario:</label><br>
+                        <textarea name="comentario" id="comentario"></textarea><br>
+                        <input type="submit" id="button" value="ENVIAR" >
+                        </form>
+
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                        <script type="text/javascript">
+                            emailjs.init('bcTJN8cbJ02cpBmeu')
+                          </script>
+                        
+                    </div>
+            </div>
+		</nav>
+	</header>
+
+    
+    <div class="nosotros2">
+        <div class="texton">
+            <div class="titulon"><h3>Valores Corporativos</h3></div>
+        <ul>
+            <li>Calidad y Excelencia: Nos comprometemos a ofrecer servicios que superen las expectativas, asegurando la máxima calidad en cada proyecto.</li>
+            <li>Innovación: Fomentamos la creatividad y la adopción de nuevas tecnologías para mejorar nuestros procesos y resultados.</li>
+            <li>Compromiso con el Medio Ambiente: Actuamos con responsabilidad ambiental, implementando prácticas sostenibles en todos nuestros servicios.</li>
+            <li>Trabajo en Equipo: Creemos en el poder de la colaboración y la comunicación efectiva para alcanzar objetivos comunes.</li>
+            <li>Ética y Transparencia: Mantenemos una conducta honesta y transparente en todas nuestras operaciones, construyendo relaciones de confianza con nuestros clientes y socios.</li>
+            <li>Seguridad: Priorizamos la seguridad de nuestro equipo y de todos los involucrados en nuestros proyectos, garantizando un ambiente de trabajo seguro y saludable.</li>
+            <li>Responsabilidad Social: Nos comprometemos con el desarrollo de las comunidades donde operamos, aportando al bienestar social y económico.</li>
+        </ul>
+        </div>
+        <div class="valores"><img src="../imagenes/valores.png" class="valor"></div>
+    </div>
+    <script src="../js/email.js"></script>
+    <script src="../js/lupa.js"></script>
+</body>
+</html>
