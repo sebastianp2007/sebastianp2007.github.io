@@ -11,8 +11,8 @@
     <header>
 		<nav>
             <a href="#"><img src="imagenes/ORIGINAL.png" id="imagen"></a>
-            <div class="dropdown">
-                <a href="#" class="baner">¿QUIENES SOMOS?</a>
+            <div class="dropdown" id="drop">
+                <a href="#" class="baner" id="baner">¿QUIENES SOMOS?</a>
                 <div class="dropdown-content">
                     <a href="paginas/nosotros.html">Nosotros</a>
                     <a href="paginas/valores.html">Valores Corporativos</a>
@@ -21,21 +21,56 @@
                 </div>
               </div>
             <a class="palo">|</a>
-			<a href="paginas/servicios.html" class="baner">SERVICIOS</a>
+			<a href="paginas/servicios.html" class="baner" id="baner2">SERVICIOS</a>
             <a class="palo">|</a>
-            <div class="dropdown">
-			<a href="#" class="baner">NOTICIAS</a>
+            <div class="dropdown" id="drop2">
+			<a href="paginas/todas.html" class="baner" id="baner3">NOTICIAS</a>
             <div class="dropdown-content">
                 <a href="paginas/recientes.html">Recientes</a>
-                <a href="paginas/relevantes.html">Relevantes</a>
+                <a href="paginas/relevantes.html">Ofertas Laborales</a>
                 <a href="paginas/todas.html">Todas</a>
             </div>
             </div>
             <a class="palo">|</a>
-			<a href="paginas/clientes.html" class="baner">NUESTROS CLIENTES</a>
+			<a href="paginas/clientes.html" class="baner" id="baner4">NUESTROS CLIENTES</a>
             <a class="palo">|</a>
-            <a class="c" href=""><img src="logo/lupa.png" class="img" alt=""></a>
-            <a class="c" href="mailto:sebastianpalaciom01@gmail.com"><img src="logo/correo.png" class="img"></a>
+            <div class="search-container">
+                <button class="search-btn" onclick="toggleSearch()">
+                    <img src="imagenes/lupa.png" alt="Lupa" class="search-icon">
+                </button>
+                <input type="text" class="search-input" placeholder="Buscar...">
+            </div>
+            <div class="dropdown2">
+                <a class="c" href="mailto:sebastianpalaciom01@gmail.com"><img src="imagenes/correo.png" class="img"></a>
+                    <div class="dropdown-content2">
+                        <div class="datos">
+                            <img src="imagenes/correo-electronico-blanco.png" alt="">
+                            <p>Escribe tus datos y te contáctaremos</p>
+
+                        </div>
+                        <form id="form" class="campos">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="name"><br>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="number" name="phone" class="telefono"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="ciudad">Ciudad:</label><br>
+                        <input type="text" id="ciudad" name="city"><br>
+                        <label for="Comentario">Comentario:</label><br>
+                        <textarea name="comentario" id="comentario"></textarea><br>
+                        <input type="submit" id="button" value="ENVIAR" >
+                        </form>
+
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                        <script type="text/javascript">
+                            emailjs.init('bcTJN8cbJ02cpBmeu')
+                          </script>
+                        
+                    </div>
+            </div>
+            
 		</nav>
 	</header>
 
@@ -43,16 +78,16 @@
 
         <div class="slider">
 
-            <input type="radio" name="slider" id="slideOne" checked>
-            <input type="radio" name="slider" id="slideTwo">
-            <input type="radio" name="slider" id="slideThree">
-            <input type="radio" name="slider" id="slideFour">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
 
             <div class="buttons">
-                <label for="slideOne"></label>
-                <label for="slideTwo"></label>
-                <label for="slideThree"></label>
-                <label for="slideFour"></label>
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
             </div>
 
             <div class="content">
@@ -176,16 +211,27 @@
     <div class="estudios">
         <div class="leyendo">
         <a>AGOSTO</a>
-        <h1>Estudios ambientales en <br>
-            zonas costeras de Santa Marta</h1>
-        <p>Estamos comprometidos como equipo a la calidad y la innovación de
-            nuestros servicios, realizando estudios ambientales en las playas de
-            Santa Marta se encuentra una parte del equipo para garantizar la
-            calidad en los proyectos.</p>
-        <button onclick="" class="boton">SEGUIR LEYENDO</button>
+        <h1>Estudios Ambientales en Zonas Costeras de Santa Marta </h1>
+        <p>En SERIN SAS, estamos comprometidos con la calidad y la innovación en cada uno de nuestros servicios. Nuestro equipo, altamente calificado,
+            se encuentra realizando estudios ambientales en las playas de Santa Marta, una región estratégica de gran importancia ecológica.</p>
+        <button class="boton"><a href="paginas/recientes.html">SEGUIR LEYENDO</a></button>
         </div>
         <div class="video"><video controls class="control">
-            <source src="video/SERIN - Chengue 3.mp4" type="video/mp4">
+            <source src="../video/SERIN - Chengue 3.mp4" type="video/mp4">
+          </video></div>
+    </div>
+
+    <div class="estudios">
+        <div class="leyendo">
+        <a>SEPTIEMBRE</a>
+        <h1>SERIN S.A.S. fortalece sus lazos empresariales en la rueda de negocios "Conéctate con el Magdalena"</h1>
+        <p>En SERIN SAS, estamos comprometidos con la calidad y la innovación en cada uno de nuestros servicios. 
+            Nuestro equipo, altamente calificado, se encuentra realizando estudios ambientales en las playas de Santa Marta,
+            una región estratégica de gran importancia ecológica.</p>
+        <button class="boton"><a href="paginas/recientes.html">SEGUIR LEYENDO</a></button>
+        </div>
+        <div class="video"><video controls class="control">
+            <source src="../video/2. Camara de Comercio.mp4" type="video/mp4">
           </video></div>
     </div>
 
@@ -195,8 +241,10 @@
         <p>En SERIN S.A.S., nuestro equipo humano es el pilar fundamental de nuestro crecimiento. El constante desarrollo de la empresa nos permite generar oportunidades de crecimiento profesional para nuestros colaboradores, además de crear nuevas vacantes que fortalecen nuestro éxito.
             Con un proceso de selección basado en competencias, buscamos personas dispuestas a asumir nuevos retos y contribuir al avance de la compañía. Explora nuestras ofertas laborales y forma parte del equipo que impulsa el futuro de SERIN S.A.S.
             </p>
-        <button onclick="" class="boton">SEGUIR LEYENDO</button>
+        <button class="boton"><a href="paginas/relevantes.html">SEGUIR LEYENDO</a></button>
         </div>
+
+        <div class="ofertas"><img src="../imagenes/Oferta laboral 1.png" alt=""></div>
     </div>
 
     <div class="servicios3"><p><a class="azul2">NUESTROS</a> <a class="azul"> CLIENTES</a></p></div>
@@ -222,7 +270,7 @@
     
                     <div id="p1"><img src="../clientes/Grupo Davila Davila.jpeg"></div>
                 </div>
-                <input class="slide-open" type="radio" id="slide-3" 
+                <input class="slide-open" type="radio" id="slide-3"
                       name="slide" aria-hidden="true" hidden="">
                 <div class="slide-item">
                     <div id="p1"><img src="../clientes/IGGA.webp"></div>
@@ -248,6 +296,7 @@
             </ol>
         </div>
     </div>
+
 
      
     <a href="https://wa.me/573104894299?text=Hola,%20me%20encuentro%20interesad@%20en%20cotizar%20el%20siguiente%20servicio:" class="btn-wsp" target="_blank"></a>
@@ -281,6 +330,12 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/email.js"></script>
+
+    <script src="js/slide.js"></script>
+
+    <script src="js/lupa.js"></script>
 
 </body>
 </html>
