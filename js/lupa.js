@@ -33,3 +33,45 @@ function toggleSearch() {
             dropdown2.classList.remove('dropdown-small');
         }
     }
+
+function buscarPalabra() {
+    var palabra = document.getElementById("buscador").value.toLowerCase(); // Captura el valor en minúsculas
+
+    // Redirige según la palabra clave ingresada
+    if (palabra === "ambiental" || palabra === "ingenieria ambiental") {
+      window.location.href = "../paginas/ambiental.html"; // Redirige a la página de inicio
+    } else if (palabra === "civil" || palabra === "ingenieria civil") {
+      window.location.href = "../paginas/civil.html"; // Redirige a la página de contacto
+    } else if (palabra === "clientes" || palabra === "nuestros clientes") {
+      window.location.href = "../paginas/clientes.html"; // Redirige a la página de acerca
+    }else if (palabra === "complementarios" || palabra === "servicios complementarios") {
+        window.location.href = "../paginas/complementarios.html"; // Redirige a la página de acerca
+    }else if (palabra === "nosotros") {
+        window.location.href = "../paginas/nosotros.html"; // Redirige a la página de acerca
+    }else if (palabra === "recientes" || palabra === "noticias recientes") {
+        window.location.href = "../paginas/nosotros.html"; // Redirige a la página de acerca
+    }else if (palabra === "ofertas laborales" || palabra === "ofertas") {
+        window.location.href = "../paginas/relevantes.html"; // Redirige a la página de acerca
+    }else if (palabra === "servicios") {
+        window.location.href = "../paginas/servicios.html"; // Redirige a la página de acerca
+    }else if (palabra === "sig" || palabra === "politica del sistema" || palabra === "politica del sistema de gestion integral") {
+        window.location.href = "../paginas/sig.html"; // Redirige a la página de acerca
+    }else if (palabra === "tip" || palabra === "politica de tratamiento" || palabra === "politica de tratamiento de la informacion personal") {
+        window.location.href = "../paginas/tip.html"; // Redirige a la página de acerca
+    }else if (palabra === "noticias" || palabra === "todas las noticias") {
+        window.location.href = "../paginas/todas.html"; // Redirige a la página de acerca
+    }else if (palabra === "topografica" || palabra === "ingenieria topografica") {
+        window.location.href = "../paginas/topografica.html"; // Redirige a la página de acerca
+    }else if (palabra === "valores" || palabra === "valores corporativos") {
+        window.location.href = "../paginas/valores.html"; // Redirige a la página de acerca
+    }else if (palabra === "inicio") {
+        window.location.href = "../index.html"; // Redirige a la página de acerca
+    }else if(palabra ===""){
+    
+    } 
+    else {
+      alert("No se encontró la palabra ingresada.");
+    }
+
+    return false; // Evita que el formulario se envíe y recargue la página
+  }
