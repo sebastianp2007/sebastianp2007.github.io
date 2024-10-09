@@ -268,7 +268,7 @@ header nav a{
     bottom:50px;
     right:25px;
     color: black;
-    border: 1px solid blue;
+    border: 1px solid #0871A5;
     border-radius: 10px;
     text-align:center;
     text-decoration: none;
@@ -608,6 +608,12 @@ header nav a{
     display: flex;
 }
 
+.estudios3{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
 .button-container{
     overflow: hidden;
 }
@@ -630,23 +636,33 @@ header nav a{
     overflow: hidden;
 }
 
+.leyendo3{
+    width: 100%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 2% 3%;
+    overflow: hidden;
+}
+
 #sep{
     padding: 7% 2% 3%;
 }
-.leyendo a,.leyendo2 a{
+.leyendo a,.leyendo2 a,.leyendo3 a{
     font-family: MALLORY l;
     color: #0E9FD8;
 }
 
-.leyendo2 h1,.leyendo h1{
+.leyendo h3,.leyendo2 h3,.leyendo3 h3{
     font-family: MALLORY b;
-    font-size: 40px;
+    font-size: 25px;
     padding-left: 40px;
     padding-right: 40px;
     color: #0E9FD8;
 }
 
-.leyendo p,.leyendo2 p{
+.leyendo p,.leyendo2 p,.leyendo3 p{
     text-align: justify;
     font-family: Mallory book;
     font-size: 17px;
@@ -826,6 +842,15 @@ body{
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
     display: flex;
+}
+
+#slide3{
+    width: 100%;
+    height: 60px;
+}
+
+#slide3 img{
+    height: 60px;
 }
 
 .slide-item #p1 {
@@ -1045,7 +1070,7 @@ body{
 }
 
 .residencial{
-    width: 100%;
+    width: 50%;
     height: auto;
     padding: 0 10px 40px 40px;
     color: #808080;
@@ -1054,7 +1079,7 @@ body{
 .residencial2{
     font-size: 19px;
     font-family: Mallory book;
-    text-align:start;
+    text-align:justify;
 }
 
 .residencial2 ul li{
@@ -1169,7 +1194,7 @@ body{
     text-align: center;
     font-family: Mallory b;
     color: #0E9FD8;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .otras{
@@ -1218,13 +1243,13 @@ body{
 .valor{
     width: auto;
     height: 100%;
-    display: block;
-    margin: auto;
+    float: right;
 }
 
 .valores{
-    width: 50%;
-    height: 600px;
+    width: 40%;
+    height: 560px;
+    margin: 30px 0;
     display: flex; /* Activa Flexbox */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
@@ -1317,7 +1342,13 @@ body{
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Sombra suave */
     color: black;
     font-size: 16px;
+    font-family: Mallory b;    
 }
+
+.campos input:focus {
+    color: black;                    /* Cambiar el color del texto al hacer foco */
+    font-family: Mallory b;           /* Cambiar el color del borde al hacer foco */
+  }
 
 .campos input[type="submit"]{
     width: 30%;
@@ -1368,26 +1399,34 @@ textarea{
 
 .compleimg{
     width: 30%;
-    height: 420px;
-    margin: 1%;
-    display: flex; /* Activa Flexbox */
+    height: 100%;
+    max-height: 280px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 40px;
 }
 
 .compleimg img{
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
+    margin-top: -12%;
 }
 
 .linea{
     width: 95%;
-    background-color: #808080;
-    height: 2px;
+    background-color: #afafaf98;
+    height: 1px;
     margin: 2%;
+}
+
+.laborales{
+    width: 100%;
+    display: flex;
 }
 
 .ofertas{
     width: 40%;
+    margin: 1% 4.5%;
 }
 
 .ofertas img{
@@ -1410,6 +1449,8 @@ textarea{
 
 .search-input {
     width: 0;
+    color: #808080;
+    font-size: 17px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -1449,6 +1490,24 @@ textarea{
 .dropdown-small{
     width: 11%;
 }
+
+#leer,#leer2,#leer3{
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-align: justify;
+    font-family: Mallory book;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
+    color: #808080;
+}
+
+.mostrar {
+    display: flex !important;
+    opacity: 1 !important;
+  }
 
 @font-face {
     font-family: Mallory book;
