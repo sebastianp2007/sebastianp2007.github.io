@@ -35,13 +35,13 @@
 			<a href="paginas/clientes.html" class="baner" id="baner4">NUESTROS CLIENTES</a>
             <a class="palo">|</a>
             <div class="search-container">
-                <button class="search-btn" onclick="toggleSearch()">
+                <button class="search-btn" onclick="toggleSearch();return buscarPalabra()" >
                     <img src="imagenes/lupa.png" alt="Lupa" class="search-icon">
                 </button>
-                <input type="text" class="search-input" placeholder="Buscar...">
+                <input type="text" id="buscador" class="search-input" placeholder="Buscar...">
             </div>
             <div class="dropdown2">
-                <a class="c" href="mailto:sebastianpalaciom01@gmail.com"><img src="imagenes/correo.png" class="img"></a>
+                <a class="c"><img src="imagenes/correo.png" class="img"></a>
                     <div class="dropdown-content2">
                         <div class="datos">
                             <img src="imagenes/correo-electronico-blanco.png" alt="">
@@ -211,7 +211,7 @@
     <div class="estudios">
         <div class="leyendo">
         <a>AGOSTO</a>
-        <h1>Estudios Ambientales en Zonas Costeras de Santa Marta </h1>
+        <h3>Estudios Ambientales en Zonas Costeras de Santa Marta </h3>
         <p>En SERIN SAS, estamos comprometidos con la calidad y la innovación en cada uno de nuestros servicios. Nuestro equipo, altamente calificado,
             se encuentra realizando estudios ambientales en las playas de Santa Marta, una región estratégica de gran importancia ecológica.</p>
         <button class="boton"><a href="paginas/recientes.html">SEGUIR LEYENDO</a></button>
@@ -221,10 +221,12 @@
           </video></div>
     </div>
 
+    <div class="linea"></div>
+
     <div class="estudios">
         <div class="leyendo">
         <a>SEPTIEMBRE</a>
-        <h1>SERIN S.A.S. fortalece sus lazos empresariales en la rueda de negocios "Conéctate con el Magdalena"</h1>
+        <h3>SERIN S.A.S. fortalece sus lazos empresariales en la rueda de negocios "Conéctate con el Magdalena"</h3>
         <p>En SERIN SAS, estamos comprometidos con la calidad y la innovación en cada uno de nuestros servicios. 
             Nuestro equipo, altamente calificado, se encuentra realizando estudios ambientales en las playas de Santa Marta,
             una región estratégica de gran importancia ecológica.</p>
@@ -235,16 +237,16 @@
           </video></div>
     </div>
 
+    <div class="linea"></div>
+
     <div class="estudios">
-        <div class="leyendo2">
-        <h1>OFERTAS LABORALES: </h1>
+        <div class="leyendo3">
+        <h3>OFERTAS LABORALES: </h3>
         <p>En SERIN S.A.S., nuestro equipo humano es el pilar fundamental de nuestro crecimiento. El constante desarrollo de la empresa nos permite generar oportunidades de crecimiento profesional para nuestros colaboradores, además de crear nuevas vacantes que fortalecen nuestro éxito.
             Con un proceso de selección basado en competencias, buscamos personas dispuestas a asumir nuevos retos y contribuir al avance de la compañía. Explora nuestras ofertas laborales y forma parte del equipo que impulsa el futuro de SERIN S.A.S.
             </p>
         <button class="boton"><a href="paginas/relevantes.html">SEGUIR LEYENDO</a></button>
         </div>
-
-        <div class="ofertas"><img src="../imagenes/Oferta laboral 1.png" alt=""></div>
     </div>
 
     <div class="servicios3"><p><a class="azul2">NUESTROS</a> <a class="azul"> CLIENTES</a></p></div>
@@ -256,7 +258,7 @@
                   <div class="slide-item">
                     <div id="p1"><img src="../clientes/RMG ELECTRICOS.jpeg"></div>
                     
-                    <div id="p1"><img src="../clientes/ARUS.png"></div>
+                    <div id="p1"><img src="clientes/Logo marina.jpg"></div>
     
                     <div id="p1"><img src="../clientes/CIVIL DISEÑOS.jpeg"></div>
                 </div>
@@ -272,10 +274,10 @@
                 </div>
                 <input class="slide-open" type="radio" id="slide-3"
                       name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <div id="p1"><img src="../clientes/IGGA.webp"></div>
+                <div class="slide-item" id="slide3">
+                    <div id="p1" class="imgg"><img src="clientes/IGGA.webp"></div>
                     
-                    <div id="p1"><img src="../clientes/Logo marina.jpg"></div>
+                    <div id="p1" class="imgg"><img src="clientes/ARUS.png"></div>
                 </div>
             <label for="slide-3" class="slide-control prev control-1">‹</label>
             <label for="slide-2" class="slide-control next control-1">›</label>
