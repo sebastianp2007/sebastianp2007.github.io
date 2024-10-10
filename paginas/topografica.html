@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/animacion.css">
+    <link rel="shortcut icon" href="../imagenes/FOTO_PERFIL.png" type="image/x-icon">
+    <title>INGENIERÍA TOPOGRÁFICA</title>
+</head>
+<body>
+    <header>
+		<nav>
+            <a href="../index.html"><img src="../imagenes/ORIGINAL.png" id="imagen"></a>
+            <div class="dropdown" id="drop">
+                <a href="#" class="baner" id="baner">¿QUIENES SOMOS?</a>
+                <div class="dropdown-content">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="valores.html">Valores Corporativos</a>
+                    <a href="sig.html">Política del Sistema de Gestión Integral (SIG)</a>
+                    <a href="tip.html">Política de Tratamiento de La Información Personal.</a>
+                </div>
+              </div>
+            <a class="palo">|</a>
+			<a href="servicios.html" class="baner" id="baner2">SERVICIOS</a>
+            <a class="palo">|</a>
+			<div class="dropdown" id="drop2">
+                <a href="todas.html" class="baner" id="baner3">NOTICIAS</a>
+                <div class="dropdown-content">
+                    <a href="recientes.html">Recientes</a>
+                    <a href="relevantes.html">Ofertas Laborales</a>
+                    <a href="todas.html">Todas</a>
+                </div>
+                </div>
+            <a class="palo">|</a>
+			
+            <div class="search-container">
+                <button class="search-btn" onclick="return buscarPalabra()" >
+                    <img src="../imagenes/lupa.png" alt="Lupa" class="search-icon">
+                </button>
+                <input type="text" id="buscador" class="search-input" placeholder="Buscar...">
+            </div>
+            <div class="dropdown2">
+                <a class="c" onclick="activarcorreo()" ><img src="../imagenes/correo.png" class="img"></a>
+                    <div class="dropdown-content2" id="form">
+                        <div class="datos">
+                            <img src="../imagenes/correo-electronico-blanco.png" alt="">
+                            <p>Escribe tus datos y te contáctaremos</p>
+
+                        </div>
+                        <form id="form" class="campos">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="name"><br>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="number" name="phone" class="telefono"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="ciudad">Ciudad:</label><br>
+                        <input type="text" id="ciudad" name="city"><br>
+                        <label for="Comentario">Comentario:</label><br>
+                        <textarea name="comentario" id="comentario"></textarea><br>
+                        <input type="submit" id="button" value="ENVIAR" >
+                        </form>
+
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                        <script type="text/javascript">
+                            emailjs.init('bcTJN8cbJ02cpBmeu')
+                          </script>
+                        
+                    </div>
+            </div>
+		</nav>
+	</header>
+
+    <div class="wrapper3">
+        <div class="image3">
+        <div class="conten3">
+            <a href="civil.html">INGENIERÍA <br> CIVIL</a>
+        </div></div>
+        <div class="image3">
+            <div class="conten3">
+            <a href="topografica.html">INGENIERÍA TOPOGRÁFICA</a>
+        </div></div>
+        <div class="image3">
+            <div class="conten3">
+            <a href="ambiental.html">INGENIERÍA AMBIENTAL</a>
+        </div></div>
+        <div class="image3">
+            <div class="conten3">
+            <a href="complementarios.html">SERVICIOS COMPLEMENTARIOS</a>
+        </div></div>
+    </div>
+
+    <div class="nosotros2">
+        <div class="nosotrosimg2"><img src="../imagenes/Foto.jpg" alt=""></div>
+
+        <div class="texton2">
+            <div class="titulon"><h3><a class="inge">Ingeniería</a> Topográfica:</h3></div>
+            <div class="somos">
+                <h4>Levantamientos Topográficos</h4>
+                <ul>
+                    <li>Levantamiento para proyectos de ingeniería y construcción.</li>
+                    <li>Mediciones GNSS y GPS.</li>
+                    <li>Fotogrametría.</li>
+                    <li>Batimetría.</li>
+                    <li>Generación de modelos digitales. </li>
+                </ul>
+                
+                <h4>Apoyo en Proyectos de Ingeniería</h4>
+                <ul>
+                    <li>Verificación de la conformidad de las obras con los planos y especificaciones técnicas.</li>
+                </ul>
+                
+                <h4>Control de Movimientos de Tierra</h4>
+                <ul>
+                    <li>Monitoreo del comportamiento del terreno durante y después de la ejecución obras de construcción.</li>
+                    <li>Análisis para la prevención de riesgos geotécnicos y optimizar la seguridad de las estructuras.</li>
+                </ul>
+                
+                <h4>Delimitación y Certificación de Terrenos</h4>
+                <ul>
+                    <li>Determinación y marcación de linderos.</li>
+                    <li>Certificación de terrenos. </li>
+                </ul>
+
+                <h4>Cartografía y SIG (Sistemas de Información Geográfica)</h4>
+                <ul>
+                    <li>Elaboración de mapas y modelos cartográficos.</li>
+                    <li>Aplicación de herramientas SIG para análisis de datos geoespaciales y modelado predictivo.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../js/email.js"></script>
+    <script src="../js/lupa.js"></script>
+</body>
+</html>
