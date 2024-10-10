@@ -32,17 +32,15 @@
             </div>
             </div>
             <a class="palo">|</a>
-			<a href="paginas/clientes.html" class="baner" id="baner4">NUESTROS CLIENTES</a>
-            <a class="palo">|</a>
             <div class="search-container">
-                <button class="search-btn" onclick="toggleSearch();return buscarPalabra()" >
+                <button class="search-btn" onclick="return buscarPalabra()" >
                     <img src="imagenes/lupa.png" alt="Lupa" class="search-icon">
                 </button>
                 <input type="text" id="buscador" class="search-input" placeholder="Buscar...">
             </div>
             <div class="dropdown2">
-                <a class="c"><img src="imagenes/correo.png" class="img"></a>
-                    <div class="dropdown-content2">
+                <a class="c" onclick="activarcorreo()" id="correo"><img src="imagenes/correo.png" class="img"></a>
+                    <div class="dropdown-content2" id="form">
                         <div class="datos">
                             <img src="imagenes/correo-electronico-blanco.png" alt="">
                             <p>Escribe tus datos y te contáctaremos</p>
@@ -249,6 +247,8 @@
         </div>
     </div>
 
+    <div class="linea"></div>
+
     <div class="servicios3"><p><a class="azul2">NUESTROS</a> <a class="azul"> CLIENTES</a></p></div>
 
     <div class="slide">
@@ -277,7 +277,7 @@
                 <div class="slide-item" id="slide3">
                     <div id="p1" class="imgg"><img src="clientes/IGGA.webp"></div>
                     
-                    <div id="p1" class="imgg"><img src="clientes/ARUS.png"></div>
+                    <div id="p1" class="imgg"><img src="clientes/ARUS.png" class="arus"></div>
                 </div>
             <label for="slide-3" class="slide-control prev control-1">‹</label>
             <label for="slide-2" class="slide-control next control-1">›</label>
@@ -316,7 +316,7 @@
         </div>
 
         <div class="contacto">
-            <div class="fila"><img src="imagenes/llamada-telefonica.png" alt=""><p>+57 310 498 4299</p></div>
+            <div class="fila"><img src="imagenes/llamada-telefonica.png" alt=""><p>+57 310 498 4299 <br> +57 313 654 2426</p></div>
             <div class="fila"><img src="imagenes/correo-electronico.png" alt=""><p>comercial@ser-in.com</p></div>
             <div class="fila"><img src="imagenes/casa.png" alt=""><p>Cra. 19 # 10-05, Ofic. 201 <br> Santa Marta, Colombia</p></div>
         </div>
