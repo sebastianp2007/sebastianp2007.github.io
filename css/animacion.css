@@ -772,7 +772,7 @@ footer{
     font-family: Mallory book;
     color: #FFF;
     font-size: 18px;
-    padding: 15px 0;
+    padding: 11px 0;
 }
 
 .contacto img{
@@ -862,6 +862,10 @@ body{
     width: 25%;
     margin: 0 55px;
     text-align: center;
+}
+
+.arus{
+    height: 50% !important;
 }
 
 .slide-item img{
@@ -1069,8 +1073,15 @@ body{
     color: #808080;
 }
 
+.completexto{
+    width: 60%;
+    height: auto;
+    padding: 20px 40px;
+    color: #808080;
+}
+
 .residencial{
-    width: 50%;
+    width: 80%;
     height: auto;
     padding: 0 10px 40px 40px;
     color: #808080;
@@ -1079,7 +1090,6 @@ body{
 .residencial2{
     font-size: 19px;
     font-family: Mallory book;
-    text-align:justify;
 }
 
 .residencial2 ul li{
@@ -1247,18 +1257,16 @@ body{
 }
 
 .valores{
-    width: 40%;
-    height: 560px;
-    margin: 30px 0;
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    width: 29%;
+    height: 540px;
+    margin: 45px 0;
 }
 
 /* Dropdown Button */
   
   /* The container <div> - needed to position the dropdown content */
 .dropdown2 {
+    cursor: pointer;
     position: relative; /* Para que el contenido del menú se posicione relativo al botón */
     overflow: visible; /* Asegura que no se corte el contenido del menú */
     width: 8%;
@@ -1277,6 +1285,7 @@ body{
   
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content2 {
+    cursor:auto;
     width: 450px;
     display: none;
     position: absolute;
@@ -1300,11 +1309,16 @@ body{
   /* Change color of dropdown links on hover */
   .dropdown-content2 a:hover {font-weight: bold;}
   
-  /* Show the dropdown menu on hover */
+  /* Show the dropdown menu on hover 
   .dropdown2:hover .dropdown-content2 {
+    display: block; /* Muestra el menú 
+    height: auto;   /* Deja que la altura se ajuste al contenido 
+    }*/
+
+.mostrarcorreo{
     display: block; /* Muestra el menú */
     height: auto;   /* Deja que la altura se ajuste al contenido */
-    }
+}    
 
 .datos{
     display: flex;
@@ -1398,7 +1412,7 @@ textarea{
 }
 
 .compleimg{
-    width: 30%;
+    width: 35%;
     height: 100%;
     max-height: 280px;
     position: relative;
@@ -1409,7 +1423,8 @@ textarea{
 .compleimg img{
     width: 100%;
     height: auto;
-    margin-top: -12%;
+    margin-top: -18%;
+    margin-left: 10%;
 }
 
 .linea{
@@ -1436,6 +1451,7 @@ textarea{
 /* lupa */
 
 .search-container {
+    margin-left: 2%;
     position: relative;
     display: flex;
     align-items: center;
@@ -1448,7 +1464,6 @@ textarea{
 }
 
 .search-input {
-    width: 0;
     color: #808080;
     font-size: 17px;
     padding: 10px;
@@ -1456,7 +1471,6 @@ textarea{
     border-radius: 20px;
     outline: none;
     transition: width 0.5s ease;
-    opacity: 0;
 }
 
 .search-btn {
@@ -1507,7 +1521,7 @@ textarea{
 .mostrar {
     display: flex !important;
     opacity: 1 !important;
-  }
+}
 
 @font-face {
     font-family: Mallory book;
