@@ -1,4 +1,4 @@
-function toggleSearch() {
+/*function toggleSearch() {
         const searchInput = document.querySelector('.search-input');
         searchInput.classList.toggle('active');
         if (searchInput.classList.contains('active')) {
@@ -33,7 +33,7 @@ function toggleSearch() {
             dropdown2.classList.remove('dropdown-small');
         }
     }
-
+*/
 function buscarPalabra() {
     var palabra = document.getElementById("buscador").value.toLowerCase(); // Captura el valor en minúsculas
 
@@ -75,3 +75,15 @@ function buscarPalabra() {
 
     return false; // Evita que el formulario se envíe y recargue la página
   }
+
+function activarcorreo() {
+    const searchInput = document.querySelector('.c');
+    const form = document.getElementById('form'); // Seleccionamos el texto del banner
+    searchInput.classList.toggle('activo');
+
+        if (searchInput.classList.contains('activo')) {
+            form.classList.add('mostrarcorreo'); // Añadimos la clase para reducir el tamaño del texto
+        } else {
+            form.classList.remove('mostrarcorreo'); // Removemos la clase cuando se cierra el input
+        }
+}
