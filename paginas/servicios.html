@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/animacion.css">
+    <link rel="shortcut icon" href="../imagenes/FOTO_PERFIL.png" type="image/x-icon">
+    <title>Servicios</title>
+</head>
+<body>
+    <header>
+		<nav>
+            <a href="../index.html"><img src="../imagenes/ORIGINAL.png" id="imagen"></a>
+            <div class="dropdown" id="drop">
+                <a href="#" class="baner" id="baner">¿QUIENES SOMOS?</a>
+                <div class="dropdown-content">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="valores.html">Valores Corporativos</a>
+                    <a href="sig.html">Política del Sistema de Gestión Integral (SIG)</a>
+                    <a href="tip.html">Política de Tratamiento de La Información Personal.</a>
+                </div>
+              </div>
+            <a class="palo">|</a>
+			<a href="servicios.html" class="baner" id="baner2">SERVICIOS</a>
+            <a class="palo">|</a>
+			<div class="dropdown" id="drop2">
+                <a href="todas.html" class="baner" id="baner3">NOTICIAS</a>
+                <div class="dropdown-content">
+                    <a href="recientes.html">Recientes</a>
+                    <a href="relevantes.html">Ofertas Laborales</a>
+                    <a href="todas.html">Todas</a>
+                </div>
+                </div>
+            <a class="palo">|</a>
+			
+            <div class="search-container">
+                <button class="search-btn" onclick="return buscarPalabra()" >
+                    <img src="../imagenes/lupa.png" alt="Lupa" class="search-icon">
+                </button>
+                <input type="text" id="buscador" class="search-input" placeholder="Buscar...">
+            </div>
+            <div class="dropdown2">
+                <a class="c" onclick="activarcorreo()" ><img src="../imagenes/correo.png" class="img"></a>
+                    <div class="dropdown-content2" id="form">
+                        <div class="datos">
+                            <img src="../imagenes/correo-electronico-blanco.png" alt="">
+                            <p>Escribe tus datos y te contáctaremos</p>
+
+                        </div>
+                        <form id="form" class="campos">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="name"><br>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="number" name="phone" class="telefono"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="ciudad">Ciudad:</label><br>
+                        <input type="text" id="ciudad" name="city"><br>
+                        <label for="Comentario">Comentario:</label><br>
+                        <textarea name="comentario" id="comentario"></textarea><br>
+                        <input type="submit" id="button" value="ENVIAR" >
+                        </form>
+
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                        <script type="text/javascript">
+                            emailjs.init('bcTJN8cbJ02cpBmeu')
+                          </script>
+                        
+                    </div>
+            </div>
+		</nav>
+	</header>
+
+    <div class="servicios"><p><a class="azul">SERIN</a> <a class="azul2">te ofrece</a></p></div>
+
+    <div class="wrapper">
+        <div class="image"><img src="../imagenes/Ingeniería Civil.jpeg" alt="">
+        <div class="conten">
+            <a href="civil.html">VER MÁS</a>
+        </div></div>
+        <div class="image" id="foto"><img src="../imagenes/Foto.jpg" alt="">
+            <div class="conten">
+                <a href="topografica.html">VER MÁS</a>
+        </div></div>
+        <div class="image" id="larga"><img src="../imagenes/Ingenieria Ambiental.png" alt="">
+            <div class="conten">
+                <a href="ambiental.html">VER MÁS</a>
+        </div></div>
+        <div class="image" id="larga"><img src="../imagenes/Servicios Complementarios.jpeg" alt="">
+            <div class="conten">
+                <a href="complementarios.html">VER MÁS</a>
+        </div></div>
+        <div class="conten2">
+        </div>
+    </div>
+
+    <div class="wrapper2">
+        <div class="image2">
+        <div class="conten2">
+            <p>INGENIERÍA <br> CIVIL</p>
+        </div></div>
+        <div class="image2">
+            <div class="conten2">
+            <p>INGENIERÍA TOPOGRÁFICA</p>
+        </div></div>
+        <div class="image2">
+            <div class="conten2">
+            <p>INGENIERÍA AMBIENTAL</p>
+        </div></div>
+        <div class="image2">
+            <div class="conten2">
+            <p>SERVICIOS COMPLEMENTARIOS</p>
+        </div></div>
+    </div>
+<script src="../js/email.js"></script>
+<script src="../js/lupa.js"></script>
+</body>
+</html>

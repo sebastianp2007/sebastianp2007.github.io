@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/animacion.css">
+    <link rel="shortcut icon" href="../imagenes/FOTO_PERFIL.png" type="image/x-icon">
+    <title>SIG</title>
+</head>
+<body>
+    <header>
+		<nav>
+            <a href="../index.html"><img src="../imagenes/ORIGINAL.png" id="imagen"></a>
+            <div class="dropdown" id="drop">
+                <a href="#" class="baner" id="baner">¿QUIENES SOMOS?</a>
+                <div class="dropdown-content">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="valores.html">Valores Corporativos</a>
+                    <a href="sig.html">Política del Sistema de Gestión Integral (SIG)</a>
+                    <a href="tip.html">Política de Tratamiento de La Información Personal.</a>
+                </div>
+              </div>
+            <a class="palo">|</a>
+			<a href="servicios.html" class="baner" id="baner2">SERVICIOS</a>
+            <a class="palo">|</a>
+			<div class="dropdown" id="drop2">
+                <a href="todas.html" class="baner" id="baner3">NOTICIAS</a>
+                <div class="dropdown-content">
+                    <a href="recientes.html">Recientes</a>
+                    <a href="relevantes.html">Ofertas Laborales</a>
+                    <a href="todas.html">Todas</a>
+                </div>
+                </div>
+            <a class="palo">|</a>
+			
+            <div class="search-container">
+                <button class="search-btn" onclick="return buscarPalabra()" >
+                    <img src="../imagenes/lupa.png" alt="Lupa" class="search-icon">
+                </button>
+                <input type="text" id="buscador" class="search-input" placeholder="Buscar...">
+            </div>
+            <div class="dropdown2">
+                <a class="c" onclick="activarcorreo()" ><img src="../imagenes/correo.png" class="img"></a>
+                    <div class="dropdown-content2" id="form">
+                        <div class="datos">
+                            <img src="../imagenes/correo-electronico-blanco.png" alt="">
+                            <p>Escribe tus datos y te contáctaremos</p>
+
+                        </div>
+                        <form id="form" class="campos">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="name"><br>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="number" name="phone" class="telefono"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="ciudad">Ciudad:</label><br>
+                        <input type="text" id="ciudad" name="city"><br>
+                        <label for="Comentario">Comentario:</label><br>
+                        <textarea name="comentario" id="comentario"></textarea><br>
+                        <input type="submit" id="button" value="ENVIAR" >
+                        </form>
+
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                        <script type="text/javascript">
+                            emailjs.init('bcTJN8cbJ02cpBmeu')
+                          </script>
+                        
+                    </div>
+            </div>
+		</nav>
+	</header>
+
+    <div class="sigimg">
+        <img src="../imagenes/SIG.jpeg" class="nosotros">
+    </div>
+
+    <div class="sig">
+            <div class="sigtitulo"><h3>Política del Sistema de Gestión Integral (SIG)</h3></div>
+            <div class="sigtexto"><p>En SERIN S.A.S., garantizamos servicios de ingeniería civil, topográfica y ambiental bajo estrictos estándares de calidad. Nos comprometemos a mantener entornos de trabajo seguros, protegiendo la salud de nuestro equipo y promoviendo la mejora continua en todos nuestros procesos.
+                Para más detalles, consulta nuestra <a class="descarga" href="../documentos/OGI-01 Política SGI.pdf" download="OGI-01 Política SGI.pdf">Política del Sistema Integrado de Gestión (SIG) </a>
+                </p>
+            </div>
+    </div>
+    <script src="../js/email.js"></script>
+    <script src="../js/lupa.js"></script>
+</body>
+</html>
