@@ -1,219 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/animacion.css">
-    <link rel="shortcut icon" href="imagenes/FOTO_PERFIL.png" type="image/x-icon">
-    <title>Serin</title>
-</head>
-<body>
-    <header>
-		<nav>
-            <a href="#"><img src="imagenes/ORIGINAL.png" id="imagen"></a>
-            <div class="dropdown" id="drop">
-                <a href="#" class="baner" id="baner">¿QUIENES SOMOS?</a>
-                <div class="dropdown-content">
-                    <a href="paginas/nosotros.html">Nosotros</a>
-                    <a href="paginas/valores.html">Valores Corporativos</a>
-                    <a href="paginas/sig.html">Política del Sistema de Gestión Integral (SIG)</a>
-                    <a href="paginas/tip.html">Política de Tratamiento de La Información Personal.</a>
-                </div>
-              </div>
-            <a class="palo">|</a>
-			<a href="paginas/servicios.html" class="baner" id="baner2">SERVICIOS</a>
-            <a class="palo">|</a>
-            <div class="dropdown" id="drop2">
-			<a href="paginas/todas.html" class="baner" id="baner3">NOTICIAS</a>
-            <div class="dropdown-content">
-                <a href="paginas/recientes.html">Recientes</a>
-                <a href="paginas/relevantes.html">Ofertas Laborales</a>
-                <a href="paginas/todas.html">Todas</a>
-            </div>
-            </div>
-            <a class="palo">|</a>
-            <div class="search-container">
-                <button class="search-btn" onclick="return buscarPalabra()" >
-                    <img src="imagenes/lupa.png" alt="Lupa" class="search-icon">
-                </button>
-                <input type="text" id="buscador" class="search-input" placeholder="Buscar...">
-            </div>
-            <div class="dropdown2">
-                <a class="c" onclick="activarcorreo()" id="correo"><img src="imagenes/correo.png" class="img"></a>
-                    <div class="dropdown-content2" id="form">
-                        <div class="datos">
-                            <img src="imagenes/correo-electronico-blanco.png" alt="">
-                            <p>Escribe tus datos y te contáctaremos</p>
-
-                        </div>
-                        <form id="form" class="campos">
-                        <label for="nombre">Nombre:</label><br>
-                        <input type="text" id="nombre" name="name"><br>
-                        <label for="telefono">Teléfono:</label><br>
-                        <input type="number" name="phone" class="telefono"><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="ciudad">Ciudad:</label><br>
-                        <input type="text" id="ciudad" name="city"><br>
-                        <label for="Comentario">Comentario:</label><br>
-                        <textarea name="comentario" id="comentario"></textarea><br>
-                        <input type="submit" id="button" value="ENVIAR" >
-                        </form>
-
-                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-                        <script type="text/javascript">
-                            emailjs.init('bcTJN8cbJ02cpBmeu')
-                          </script>
-                        
-                    </div>
-            </div>
-            
-		</nav>
-	</header>
-
-    <div class="container">
-
-        <div class="slider">
-
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-            <input type="radio" name="slider" id="slide4">
-
-            <div class="buttons">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-            </div>
-
-            <div class="content">
-                <div class="firstslide">
-                <div class="banerp">
-                    <h2>Contamos con Licencia DIMAR</h2><br>
-                    <p>Expertos en investigación, explotación de recursos e infraestructura en el mar.</p>
-                </div>  
-                </div>
-                <div class="secondslide">
-                    <div class="banerp">
-                        <h2>Equipos a la vanguardia</h2><br>
-                        <p>Soluciones innovadoras para cada desafío.</p>
-                    </div>   
-                </div>
-                <div class="thirdslide">
-                    <div class="banerp">
-                        <h2>Experiencia y cuidado en cada corte</h2><br>
-                        <p>Poda y tala con nosotros. </p>
-                    </div>   
-                </div>
-                <div class="fourslide">
-                    <div class="banerp">
-                        <h2>Tecnología RTK al servicio de tus proyectos</h2><br>
-                        <p>Mediciones topográficas de alta precisión.</p>
-                    </div>   
-                </div>
-            </div>
-
-        </div>
- 
-    </div>
-
-    <div class="servicios"><p><a class="azul">SERIN</a> <a class="azul2">te ofrece</a></p></div>
-
-    <div class="wrapper">
-        <div class="image"><img src="imagenes/Ingeniería Civil.jpeg" alt="">
-        <div class="conten">
-            <a href="paginas/civil.html">VER MÁS</a>
-        </div></div>
-        <div class="image" id="foto"><img src="imagenes/Foto.jpg" alt="">
-            <div class="conten">
-                <a href="paginas/topografica.html">VER MÁS</a>
-        </div></div>
-        <div class="image" id="larga"><img src="imagenes/Ingenieria Ambiental.png" alt="">
-            <div class="conten">
-                <a href="paginas/ambiental.html">VER MÁS</a>
-        </div></div>
-        <div class="image" id="larga"><img src="imagenes/Servicios Complementarios.jpeg" alt="">
-            <div class="conten">
-                <a href="paginas/complementarios.html">VER MÁS</a>
-        </div></div>
-        <div class="conten2">
-        </div>
-    </div>
-
-    <div class="wrapper2">
-        <div class="image2">
-        <div class="conten2">
-            <p>INGENIERÍA <br> CIVIL</p>
-        </div></div>
-        <div class="image2">
-            <div class="conten2">
-            <p>INGENIERÍA TOPOGRÁFICA</p>
-        </div></div>
-        <div class="image2">
-            <div class="conten2">
-            <p>INGENIERÍA AMBIENTAL</p>
-        </div></div>
-        <div class="image2">
-            <div class="conten2">
-            <p>SERVICIOS COMPLEMENTARIOS</p>
-        </div></div>
-    </div>
-
-    <div class="elegirnos">
-        <div class="titulo"><p><a class="por">¿Por qué </a><a class="ele">elegirnos?</a></p></div>
-        <div class="icon">
-            <div class="iconos">
-                <img src="imagenes/PAGINA WEB SERIN PREW-08.png" alt="">
-            </div>
-            <div class="iconos">
-                <img src="imagenes/PAGINA WEB SERIN PREW-09.png" alt="">
-            </div>
-            <div class="iconos">
-                <img src="imagenes/PAGINA WEB SERIN PREW-10.png" alt="">
-            </div>
-        </div>
-        <div class="icon2">
-            <div class="iconos2">
-                <p>EXPERIENCIA</p>
-            </div>
-            <div class="iconos2">
-                <p>CALIDAD</p>
-            </div>
-            <div class="iconos2">
-                <p>INNOVACIÓN</p>
-            </div>
-        </div>
-        <div class="icon3">
-            <div class="iconos3">
-                <p>Contamos con más de 5 años de
-                    experiencia, llevando a cabo proyectos
-                    exitosos en diversas áreas de la ingeniería.</p>
-            </div>
-            <div class="iconos3">
-                <p>Encontrarás altos estándares de calidad en
-                    todos nuestros servicios, garantizando
-                    resultados excepcionales.</p>
-            </div>
-            <div class="iconos3">
-                <p>Utilizamos tecnología de vanguardia y
-                    métodos innovadores para ofrecer
-                    soluciones eficientes.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="servicios3"><p><a class="azul"> NOTICIAS</a></p></div>
-
-    <div class="estudios">
+<div class="estudios">
         <div class="leyendo">
-        <a>AGOSTO</a>
+        <a>AGOSTO 2024</a>
         <h3>Estudios Ambientales en Zonas Costeras de Santa Marta </h3>
         <p>En SERIN SAS, estamos comprometidos con la calidad y la innovación en cada uno de nuestros servicios. Nuestro equipo, altamente calificado,
-            se encuentra realizando estudios ambientales en las playas de Santa Marta, una región estratégica de gran importancia ecológica.</p>
-        <button class="boton"><a href="paginas/recientes.html">SEGUIR LEYENDO</a></button>
+            se encuentra realizando estudios ambientales en las playas de Santa Marta, una región estratégica de gran importancia ecológica.
+            Con el objetivo de garantizar la calidad en los proyectos, abordamos de manera integral la caracterización de los ecosistemas marino-costeros.</p>
+            <div id="leer">
+                Llevamos a cabo estudios especializados que permiten identificar y evaluar tanto los componentes bióticos (flora y fauna) como abióticos (suelo, agua, aire) y socioeconómico de las áreas de estudio. Para ello, utilizamos equipos de última tecnología
+                y aplicamos metodologías avanzadas que se encuentran a la vanguardia del sector ambiental. Este enfoque nos permite cumplir con los requerimientos exigidos por las autoridades ambientales y la Autoridad Marítima para sus trámites y gestiones. <br> <br>
+                En SERIN SAS, nos mueve un compromiso profundo con la protección del medio ambiente y el desarrollo sostenible de las actividades en la región marino-costera, garantizando que nuestras acciones contribuyan a la preservación de este invaluable ecosistema.
+            </div>
+        <input type="button" value="SEGUIR LEYENDO" onclick="mostrarTexto()" class="boton" id="botons">
         </div>
+        
         <div class="video"><video controls class="control">
             <source src="../video/SERIN - Chengue 3.mp4" type="video/mp4">
           </video></div>
@@ -223,12 +22,16 @@
 
     <div class="estudios">
         <div class="leyendo">
-        <a>SEPTIEMBRE</a>
+        <a>SEPTIEMBRE 2024</a>
         <h3>SERIN S.A.S. fortalece sus lazos empresariales en la rueda de negocios "Conéctate con el Magdalena"</h3>
-        <p>En SERIN SAS, estamos comprometidos con la calidad y la innovación en cada uno de nuestros servicios. 
-            Nuestro equipo, altamente calificado, se encuentra realizando estudios ambientales en las playas de Santa Marta,
-            una región estratégica de gran importancia ecológica.</p>
-        <button class="boton"><a href="paginas/recientes.html">SEGUIR LEYENDO</a></button>
+        <p>El equipo de SERIN S.A.S. Participó activamente en la rueda de negocios "Conéctate con el Magdalena", 
+            organizada por la Cámara de Comercio de Santa Marta para el Magdalena.
+            Este evento, que reunió a empresarios y líderes locales, fue una oportunidad clave para generar alianzas estratégicas que impulsarán el desarrollo y la competitividad en la región.</p>
+            <div id="leer2">
+                Durante el encuentro, SERIN S.A.S. estableció valiosas conexiones con actores empresariales del sector, reafirmando su compromiso con el crecimiento económico de Santa Marta.
+                Agradecemos a la Cámara de Comercio de Santa Marta por hacernos partícipes de este importante espacio, que sin duda seguirá impulsando oportunidades de cooperación y fortalecimiento empresarial.
+            </div>
+            <input type="button" value="SEGUIR LEYENDO" onclick="mostrarTexto2()" class="boton" id="botons2">
         </div>
         <div class="video"><video controls class="control">
             <source src="../video/2. Camara de Comercio.mp4" type="video/mp4">
@@ -238,106 +41,20 @@
     <div class="linea"></div>
 
     <div class="estudios">
-        <div class="leyendo3">
-        <h3>OFERTAS LABORALES: </h3>
-        <p>En SERIN S.A.S., nuestro equipo humano es el pilar fundamental de nuestro crecimiento. El constante desarrollo de la empresa nos permite generar oportunidades de crecimiento profesional para nuestros colaboradores, además de crear nuevas vacantes que fortalecen nuestro éxito.
-            Con un proceso de selección basado en competencias, buscamos personas dispuestas a asumir nuevos retos y contribuir al avance de la compañía. Explora nuestras ofertas laborales y forma parte del equipo que impulsa el futuro de SERIN S.A.S.
-            </p>
-        <button class="boton"><a href="paginas/relevantes.html">SEGUIR LEYENDO</a></button>
+        <div class="leyendo">
+        <a>SEPTIEMBRE 2024</a>
+        <h3>Conmemoración día mundial de limpieza de playas:</h3>
+        <p>El 20 de septiembre junto a Marina Santa Marta estuvimos apoyando la actividad de Playaton en la bahía de los cocos,
+            organizada por el ESSMAR ESP para celebrar el día mundial de la limpieza de playas.
+            Esta actividad es de suma importancia para la conservación de los ecosistemas marinos y terrestres.
+            Se estima que más de 150 millones de toneladas de plástico se encuentran en los océanos hoy en día y que para el año 2050 los océanos podrían contener más plásticos que peces.</p>
+        <div id="leer3">
+            Muchas de las especies marinas, confunden estos residuos con comida, afectando significativamente su desarrollo, generando en muchos casos su muerte y por ende pérdida de diversidad. <br><br>
+            Por este motivo es importante realizar las limpiezas de playas, promoviendo la conservación y cuidado del ambiente. Mejorando así el paisaje y los ecosistemas.
         </div>
+        <input type="button" value="SEGUIR LEYENDO" onclick="mostrarTexto3()" class="boton" id="botons3">
+        </div>
+        <div class="video"><video controls class="control">
+            <source src="../video/3. PLAYAS.mp4" type="video/mp4">
+          </video></div>
     </div>
-
-    <div class="linea"></div>
-
-    <div class="servicios3"><p><a class="azul2">NUESTROS</a> <a class="azul"> CLIENTES</a></p></div>
-
-    <div class="slide">
-        <div class="slide-inner">
-            <input class="slide-open" type="radio" id="slide-1" 
-                  name="slide" aria-hidden="true" hidden="" checked="checked">
-                  <div class="slide-item">
-                    <div id="p1"><img src="../clientes/RMG ELECTRICOS.jpeg"></div>
-                    
-                    <div id="p1"><img src="clientes/Logo marina.jpg"></div>
-    
-                    <div id="p1"><img src="../clientes/CIVIL DISEÑOS.jpeg"></div>
-                </div>
-    
-                <input class="slide-open" type="radio" id="slide-2" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <div id="p1"><img src="../clientes/CONSTRUMEX.jpeg"></div>
-                    
-                    <div id="p1"><img src="../clientes/ENERGY.png"></div>
-    
-                    <div id="p1"><img src="../clientes/Grupo Davila Davila.jpeg"></div>
-                </div>
-                <input class="slide-open" type="radio" id="slide-3"
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item" id="slide3">
-                    <div id="p1" class="imgg"><img src="clientes/IGGA.webp"></div>
-                    
-                    <div id="p1" class="imgg"><img src="clientes/ARUS.png" class="arus"></div>
-                </div>
-            <label for="slide-3" class="slide-control prev control-1">‹</label>
-            <label for="slide-2" class="slide-control next control-1">›</label>
-            <label for="slide-1" class="slide-control prev control-2">‹</label>
-            <label for="slide-3" class="slide-control next control-2">›</label>
-            <label for="slide-2" class="slide-control prev control-3">‹</label>
-            <label for="slide-1" class="slide-control next control-3">›</label>
-            <ol class="slide-indicador">
-                <li>
-                    <label for="slide-1" class="slide-circulo">•</label>
-                </li>
-                <li>
-                    <label for="slide-2" class="slide-circulo">•</label>
-                </li>
-                <li>
-                    <label for="slide-3" class="slide-circulo">•</label>
-                </li>
-            </ol>
-        </div>
-    </div>
-
-
-     
-    <a href="https://wa.me/573104894299?text=Hola,%20me%20encuentro%20interesad@%20en%20cotizar%20el%20siguiente%20servicio:" class="btn-wsp" target="_blank"></a>
-
-    <footer>
-        <div class="logo">
-            <img src="imagenes/LOGO SERIN_Mesa de trabajo 1 copia 9.png">
-        </div>
-
-        <div class="arriba">
-            <p>¿QUIENES SOMOS?</p>
-            <p>SERVICIOS</p>
-            <p>NOTICIAS</p>
-            <p>NUESTROS CLIENTES</p>
-        </div>
-
-        <div class="contacto">
-            <div class="fila"><img src="imagenes/llamada-telefonica.png" alt=""><p>+57 310 498 4299 <br> +57 313 654 2426</p></div>
-            <div class="fila"><img src="imagenes/correo-electronico.png" alt=""><p>comercial@ser-in.com</p></div>
-            <div class="fila"><img src="imagenes/casa.png" alt=""><p>Cra. 19 # 10-05, Ofic. 201 <br> Santa Marta, Colombia</p></div>
-        </div>
-
-        <div class="redes">
-            <p class="terminos">Términos de Uso. @ 2024 SERIN S.A.S <br>
-                Todos los derechos reservados</p>
-
-            <div class="red">
-                <img src="imagenes/facebook.png" onclick="window.open('https://www.facebook.com/share/WwCgCuCaS3ctWca7/?mibextid=LQQJ4d', '_blank')">
-                <img src="imagenes/instagram.png" onclick="window.open('https://www.instagram.com/serin.col/', '_blank')">
-                <img src="imagenes/linkedin.png" onclick="window.open('https://www.linkedin.com/company/ser-in/posts/?feedView=all')">
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/email.js"></script>
-
-    <script src="js/slide.js"></script>
-
-    <script src="js/lupa.js"></script>
-
-</body>
-</html>
