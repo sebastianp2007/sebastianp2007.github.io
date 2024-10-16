@@ -34,17 +34,26 @@ function toggleSearch() {
         }
     }
 */
+
+document.getElementById('buscador').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        buscarPalabra(); // Llama a la función cuando se presiona Enter
+        event.preventDefault(); // Evita que se envíe el formulario o que la página se recargue
+    }
+});
+
+
 function buscarPalabra() {
     var palabra = document.getElementById("buscador").value.toLowerCase(); // Captura el valor en minúsculas
 
     // Redirige según la palabra clave ingresada
     if (palabra === "ambiental" || palabra === "ingenieria ambiental") {
       window.location.href = "../paginas/ambiental.html"; // Redirige a la página de inicio
-    } else if (palabra === "civil" || palabra === "ingenieria civil") {
+    } else if (palabra === "civil" || palabra === "ingenieria civil" || palabra === "contruccion" || palabra === "contruccion") {
       window.location.href = "../paginas/civil.html"; // Redirige a la página de contacto
     } else if (palabra === "clientes" || palabra === "nuestros clientes") {
       window.location.href = "../paginas/clientes.html"; // Redirige a la página de acerca
-    }else if (palabra === "complementarios" || palabra === "servicios complementarios") {
+    }else if (palabra === "complementarios" || palabra === "servicios complementarios" || palabra === "social") {
         window.location.href = "../paginas/complementarios.html"; // Redirige a la página de acerca
     }else if (palabra === "nosotros") {
         window.location.href = "../paginas/nosotros.html"; // Redirige a la página de acerca
@@ -60,7 +69,7 @@ function buscarPalabra() {
         window.location.href = "../paginas/tip.html"; // Redirige a la página de acerca
     }else if (palabra === "noticias" || palabra === "todas las noticias") {
         window.location.href = "../paginas/todas.html"; // Redirige a la página de acerca
-    }else if (palabra === "topografica" || palabra === "ingenieria topografica") {
+    }else if (palabra === "topografica" || palabra === "ingenieria topografica" || palabra === "topografia") {
         window.location.href = "../paginas/topografica.html"; // Redirige a la página de acerca
     }else if (palabra === "valores" || palabra === "valores corporativos") {
         window.location.href = "../paginas/valores.html"; // Redirige a la página de acerca
