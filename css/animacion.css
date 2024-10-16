@@ -1,343 +1,1564 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/animacion.css">
-    <link rel="shortcut icon" href="imagenes/FOTO_PERFIL.png" type="image/x-icon">
-    <title>Serin</title>
-</head>
-<body>
-    <header>
-		<nav>
-            <a href="#"><img src="imagenes/ORIGINAL.png" id="imagen"></a>
-            <div class="dropdown" id="drop">
-                <a href="#" class="baner" id="baner">¿QUIENES SOMOS?</a>
-                <div class="dropdown-content">
-                    <a href="paginas/nosotros.html">Nosotros</a>
-                    <a href="paginas/valores.html">Valores Corporativos</a>
-                    <a href="paginas/sig.html">Política del Sistema de Gestión Integral (SIG)</a>
-                    <a href="paginas/tip.html">Política de Tratamiento de La Información Personal.</a>
-                </div>
-              </div>
-            <a class="palo">|</a>
-			<a href="paginas/servicios.html" class="baner" id="baner2">SERVICIOS</a>
-            <a class="palo">|</a>
-            <div class="dropdown" id="drop2">
-			<a href="paginas/todas.html" class="baner" id="baner3">NOTICIAS</a>
-            <div class="dropdown-content">
-                <a href="paginas/recientes.html">Recientes</a>
-                <a href="paginas/relevantes.html">Ofertas Laborales</a>
-                <a href="paginas/todas.html">Todas</a>
-            </div>
-            </div>
-            <a class="palo">|</a>
-            <div class="search-container">
-                <button class="search-btn" onclick="return buscarPalabra()" >
-                    <img src="imagenes/lupa.png" alt="Lupa" class="search-icon">
-                </button>
-                <input type="text" id="buscador" class="search-input" placeholder="Buscar...">
-            </div>
-            <div class="dropdown2">
-                <a class="c" onclick="activarcorreo()" id="correo"><img src="imagenes/correo.png" class="img"></a>
-                    <div class="dropdown-content2" id="form">
-                        <div class="datos">
-                            <img src="imagenes/correo-electronico-blanco.png" alt="">
-                            <p>Escribe tus datos y te contáctaremos</p>
+*{
+    padding: 0;
+    margin: 0;
+}
 
-                        </div>
-                        <form id="form" class="campos">
-                        <label for="nombre">Nombre:</label><br>
-                        <input type="text" id="nombre" name="name"><br>
-                        <label for="telefono">Teléfono:</label><br>
-                        <input type="number" name="phone" class="telefono"><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="ciudad">Ciudad:</label><br>
-                        <input type="text" id="ciudad" name="city"><br>
-                        <label for="Comentario">Comentario:</label><br>
-                        <textarea name="comentario" id="comentario"></textarea><br>
-                        <input type="submit" id="button" value="ENVIAR" >
-                        </form>
+#imagen{
+    width: 165px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: -30px;
+}
 
-                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+#ser{
+  color: rgb(39, 134, 151);
+  margin: 0;
+}
 
-                        <script type="text/javascript">
-                            emailjs.init('bcTJN8cbJ02cpBmeu')
-                          </script>
-                        
-                    </div>
-            </div>
-            
-		</nav>
-	</header>
+@keyframes slidein {
+from {
+  height: 1px;
+  width: 1px;
+}
 
-    <div class="container">
+to {
+  height: auto;
+  width: 100%;
+}
 
-        <div class="slider">
+}
+/*header*/
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
 
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-            <input type="radio" name="slider" id="slide4">
+header nav *{
+    overflow-x: hidden;
+}
 
-            <div class="buttons">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-            </div>
+header nav {
+    width: 100%;
+    height: 100px;
+    float: left;
+    display: flex;
+    text-decoration: none;
+    padding-left: 20px;
+    position: fixed;
+    z-index: 10;
+    background-color: #FFF;
+}
 
-            <div class="content">
-                <div class="firstslide">
-                <div class="banerp">
-                    <h2>Contamos con Licencia DIMAR</h2><br>
-                    <p>Expertos en investigación, explotación de recursos e infraestructura en el mar.</p>
-                </div>  
-                </div>
-                <div class="secondslide">
-                    <div class="banerp">
-                        <h2>Equipos a la vanguardia</h2><br>
-                        <p>Soluciones innovadoras para cada desafío.</p>
-                    </div>   
-                </div>
-                <div class="thirdslide">
-                    <div class="banerp">
-                        <h2>Experiencia y cuidado en cada corte</h2><br>
-                        <p>Poda y tala con nosotros. </p>
-                    </div>   
-                </div>
-                <div class="fourslide">
-                    <div class="banerp">
-                        <h2>Tecnología RTK al servicio de tus proyectos</h2><br>
-                        <p>Mediciones topográficas de alta precisión.</p>
-                    </div>   
-                </div>
-            </div>
+header nav a{
+    text-decoration: none;
+    overflow-y: hidden;
+    font-family: Mallory book;
+    font-size: large;
+    font-size: 20px;
+    color: #808080;
+}
 
-        </div>
- 
-    </div>
+.palo{
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: auto;
+}
 
-    <div class="servicios"><p><a class="azul">SERIN</a> <a class="azul2">te ofrece</a></p></div>
+.baner{
+    padding: 0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
-    <div class="wrapper">
-        <div class="image"><img src="imagenes/Ingeniería Civil.jpeg" alt="">
-        <div class="conten">
-            <a href="paginas/civil.html">VER MÁS</a>
-        </div></div>
-        <div class="image" id="foto"><img src="imagenes/Foto.jpg" alt="">
-            <div class="conten">
-                <a href="paginas/topografica.html">VER MÁS</a>
-        </div></div>
-        <div class="image" id="larga"><img src="imagenes/Ingenieria Ambiental.png" alt="">
-            <div class="conten">
-                <a href="paginas/ambiental.html">VER MÁS</a>
-        </div></div>
-        <div class="image" id="larga"><img src="imagenes/Servicios Complementarios.jpeg" alt="">
-            <div class="conten">
-                <a href="paginas/complementarios.html">VER MÁS</a>
-        </div></div>
-        <div class="conten2">
-        </div>
-    </div>
+.c{
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin-left: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
-    <div class="wrapper2">
-        <div class="image2">
-        <div class="conten2">
-            <p>INGENIERÍA <br> CIVIL</p>
-        </div></div>
-        <div class="image2">
-            <div class="conten2">
-            <p>INGENIERÍA TOPOGRÁFICA</p>
-        </div></div>
-        <div class="image2">
-            <div class="conten2">
-            <p>INGENIERÍA AMBIENTAL</p>
-        </div></div>
-        <div class="image2">
-            <div class="conten2">
-            <p>SERVICIOS COMPLEMENTARIOS</p>
-        </div></div>
-    </div>
+.img{
+    width: 40px;
+}
 
-    <div class="elegirnos">
-        <div class="titulo"><p><a class="por">¿Por qué </a><a class="ele">elegirnos?</a></p></div>
-        <div class="icon">
-            <div class="iconos">
-                <img src="imagenes/PAGINA WEB SERIN PREW-08.png" alt="">
-            </div>
-            <div class="iconos">
-                <img src="imagenes/PAGINA WEB SERIN PREW-09.png" alt="">
-            </div>
-            <div class="iconos">
-                <img src="imagenes/PAGINA WEB SERIN PREW-10.png" alt="">
-            </div>
-        </div>
-        <div class="icon2">
-            <div class="iconos2">
-                <p>EXPERIENCIA</p>
-            </div>
-            <div class="iconos2">
-                <p>CALIDAD</p>
-            </div>
-            <div class="iconos2">
-                <p>INNOVACIÓN</p>
-            </div>
-        </div>
-        <div class="icon3">
-            <div class="iconos3">
-                <p>Contamos con más de 5 años de
-                    experiencia, llevando a cabo proyectos
-                    exitosos en diversas áreas de la ingeniería.</p>
-            </div>
-            <div class="iconos3">
-                <p>Encontrarás altos estándares de calidad en
-                    todos nuestros servicios, garantizando
-                    resultados excepcionales.</p>
-            </div>
-            <div class="iconos3">
-                <p>Utilizamos tecnología de vanguardia y
-                    métodos innovadores para ofrecer
-                    soluciones eficientes.</p>
-            </div>
-        </div>
-    </div>
+@media screen and (max-width: 1400px) {
+	.baner{
+        font-size: 18px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
 
-    <div class="servicios3"><p><a class="azul"> NOTICIAS</a></p></div>
+/*carrucel*/
+.slider input{
+    visibility: hidden;
+    display: none;
+}
 
-    <div class="estudios">
-        <div class="leyendo">
-        <a>AGOSTO</a>
-        <h3>Estudios Ambientales en Zonas Costeras de Santa Marta </h3>
-        <p>En SERIN SAS, estamos comprometidos con la calidad y la innovación en cada uno de nuestros servicios. Nuestro equipo, altamente calificado,
-            se encuentra realizando estudios ambientales en las playas de Santa Marta, una región estratégica de gran importancia ecológica.</p>
-        <button class="boton"><a href="paginas/recientes.html">SEGUIR LEYENDO</a></button>
-        </div>
-        <div class="video"><video controls class="control">
-            <source src="../video/SERIN - Chengue 3.mp4" type="video/mp4">
-          </video></div>
-    </div>
+.slider{
+    position: relative; /* Es necesario para que el z-index surta efecto */
+}
 
-    <div class="linea"></div>
+.buttons{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 5%;
+    gap: 10px;
+}
 
-    <div class="estudios">
-        <div class="leyendo">
-        <a>SEPTIEMBRE</a>
-        <h3>SERIN S.A.S. fortalece sus lazos empresariales en la rueda de negocios "Conéctate con el Magdalena"</h3>
-        <p>En SERIN SAS, estamos comprometidos con la calidad y la innovación en cada uno de nuestros servicios. 
-            Nuestro equipo, altamente calificado, se encuentra realizando estudios ambientales en las playas de Santa Marta,
-            una región estratégica de gran importancia ecológica.</p>
-        <button class="boton"><a href="paginas/recientes.html">SEGUIR LEYENDO</a></button>
-        </div>
-        <div class="video"><video controls class="control">
-            <source src="../video/2. Camara de Comercio.mp4" type="video/mp4">
-          </video></div>
-    </div>
+.buttons label{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 12px;
+    border: 2px solid white;
+}
 
-    <div class="linea"></div>
+.buttons label:hover{
+    background-color: #999999;
+}
 
-    <div class="estudios">
-        <div class="leyendo3">
-        <h3>OFERTAS LABORALES: </h3>
-        <p>En SERIN S.A.S., nuestro equipo humano es el pilar fundamental de nuestro crecimiento. El constante desarrollo de la empresa nos permite generar oportunidades de crecimiento profesional para nuestros colaboradores, además de crear nuevas vacantes que fortalecen nuestro éxito.
-            Con un proceso de selección basado en competencias, buscamos personas dispuestas a asumir nuevos retos y contribuir al avance de la compañía. Explora nuestras ofertas laborales y forma parte del equipo que impulsa el futuro de SERIN S.A.S.
-            </p>
-        <button class="boton"><a href="paginas/relevantes.html">SEGUIR LEYENDO</a></button>
-        </div>
-    </div>
+.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.slider input:nth-child(3):checked ~ .buttons label:nth-child(3),
+.slider input:nth-child(4):checked ~ .buttons label:nth-child(4)
+{
+    background-color: white;
+    border: hidden;
+    width: 14px;
+    height: 14px;
+    animation: botones 25s infinite alternate ease-in-out;
+}
 
-    <div class="linea"></div>
-
-    <div class="servicios3"><p><a class="azul2">NUESTROS</a> <a class="azul"> CLIENTES</a></p></div>
-
-    <div class="slide">
-        <div class="slide-inner">
-            <input class="slide-open" type="radio" id="slide-1" 
-                  name="slide" aria-hidden="true" hidden="" checked="checked">
-                  <div class="slide-item">
-                    <div id="p1"><img src="../clientes/RMG ELECTRICOS.jpeg"></div>
-                    
-                    <div id="p1"><img src="clientes/Logo marina.jpg"></div>
-    
-                    <div id="p1"><img src="../clientes/CIVIL DISEÑOS.jpeg"></div>
-                </div>
-    
-                <input class="slide-open" type="radio" id="slide-2" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <div id="p1"><img src="../clientes/CONSTRUMEX.jpeg"></div>
-                    
-                    <div id="p1"><img src="../clientes/ENERGY.png"></div>
-    
-                    <div id="p1"><img src="../clientes/Grupo Davila Davila.jpeg"></div>
-                </div>
-                <input class="slide-open" type="radio" id="slide-3"
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item" id="slide3">
-                    <div id="p1" class="imgg"><img src="clientes/IGGA.webp"></div>
-                    
-                    <div id="p1" class="imgg"><img src="clientes/ARUS.png" class="arus"></div>
-                </div>
-            <label for="slide-3" class="slide-control prev control-1">‹</label>
-            <label for="slide-2" class="slide-control next control-1">›</label>
-            <label for="slide-1" class="slide-control prev control-2">‹</label>
-            <label for="slide-3" class="slide-control next control-2">›</label>
-            <label for="slide-2" class="slide-control prev control-3">‹</label>
-            <label for="slide-1" class="slide-control next control-3">›</label>
-            <ol class="slide-indicador">
-                <li>
-                    <label for="slide-1" class="slide-circulo">•</label>
-                </li>
-                <li>
-                    <label for="slide-2" class="slide-circulo">•</label>
-                </li>
-                <li>
-                    <label for="slide-3" class="slide-circulo">•</label>
-                </li>
-            </ol>
-        </div>
-    </div>
+.content{
+    position: relative;
+    width: 400vw;
+    display: flex;
+    transition: 400ms ease-in-out;
+}
 
 
-     
-    <a href="https://wa.me/573104894299?text=Hola,%20me%20encuentro%20interesad@%20en%20cotizar%20el%20siguiente%20servicio:" class="btn-wsp" target="_blank"></a>
+.firstslide,.secondslide,.thirdslide,.fourslide{
+    position: relative;
+    width: 100vw;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    <footer>
-        <div class="logo">
-            <img src="imagenes/LOGO SERIN_Mesa de trabajo 1 copia 9.png">
-        </div>
+.secondslide .banerp{
+    padding: 0 0 0 5%;
 
-        <div class="arriba">
-            <p>¿QUIENES SOMOS?</p>
-            <p>SERVICIOS</p>
-            <p>NOTICIAS</p>
-            <p>NUESTROS CLIENTES</p>
-        </div>
+}
 
-        <div class="contacto">
-            <div class="fila"><img src="imagenes/llamada-telefonica.png" alt=""><p>+57 310 498 4299 <br> +57 313 654 2426</p></div>
-            <div class="fila"><img src="imagenes/correo-electronico.png" alt=""><p>comercial@ser-in.com</p></div>
-            <div class="fila"><img src="imagenes/casa.png" alt=""><p>Cra. 19 # 10-05, Ofic. 201 <br> Santa Marta, Colombia</p></div>
-        </div>
+.firstslide{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../imagenes/1.JPG");
+    background-size: 100% 100%;
+    text-align: right;
+}
 
-        <div class="redes">
-            <p class="terminos">Términos de Uso. @ 2024 SERIN S.A.S <br>
-                Todos los derechos reservados</p>
+.secondslide{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
+    url("../imagenes/2.png");
+    background-size: 100% auto;
+    background-position: 0 25%;
+}
 
-            <div class="red">
-                <img src="imagenes/facebook.png" onclick="window.open('https://www.facebook.com/share/WwCgCuCaS3ctWca7/?mibextid=LQQJ4d', '_blank')">
-                <img src="imagenes/instagram.png" onclick="window.open('https://www.instagram.com/serin.col/', '_blank')">
-                <img src="imagenes/linkedin.png" onclick="window.open('https://www.linkedin.com/company/ser-in/posts/?feedView=all')">
-            </div>
-        </div>
-    </footer>
+.thirdslide{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),  url("../imagenes/3.jpeg");
+    background-size: 100% auto;
+    background-position: 0 35%;
+}
 
-    <script src="js/email.js"></script>
+.fourslide{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),  url("../imagenes/4.png");
+    background-size: 100% auto;
+    background-position: 0 35%;
+}
 
-    <script src="js/slide.js"></script>
+.slider input:nth-child(1):checked ~ .content{
+    left: 0;
+}
 
-    <script src="js/lupa.js"></script>
+.slider input:nth-child(2):checked ~ .content{
+    left: -100vw;
+}
 
-</body>
-</html>
+.slider input:nth-child(3):checked ~ .content{
+    left: -200vw;
+}
+
+.slider input:nth-child(4):checked ~ .content{
+    left: -300vw;
+}
+
+
+.banerp{
+    padding: 2%;
+    text-align: left;
+    font-size: 25px;
+    font-family: Mallory b;
+    width: 100%;
+    margin-left: 55%;
+    margin-right: 4,5%;
+    color: #FFF;
+}
+
+.banerp h2{
+    font-family: mallory bi;
+    font-size: 45px;
+}
+
+.banerp p{
+    font-family: mallory l;
+    font-size: 25px;
+}
+
+.firstslide img{
+    padding: 2%;
+    width: 50%;
+}
+
+.secondslide img{
+    padding: 2%;
+    width: 50%;
+}
+
+.thirdslide img{
+    padding: 2%;
+    width: 50%;
+}
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 55px;
+    bottom:50px;
+    right:25px;
+    background-image: url("../imagenes/whatsapp.png");
+    border-radius:50px;
+    text-align:center;
+}
+
+.btn-wsp:hover{
+    transition: 0.9s;
+    background-image: url("../imagenes/whatsapp\ 2.png");
+}
+
+.Licencia{
+    font-family: Mallory book;
+    font-size: 12px;
+    padding: 10px;
+    position:fixed;
+    width:120px;
+    height:auto;
+    bottom:50px;
+    right:25px;
+    color: black;
+    border: 1px solid #0871A5;
+    border-radius: 10px;
+    text-align:center;
+    text-decoration: none;
+}
+
+
+.servicios{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    display: block;
+    font-size: 45px;
+}
+
+.servicios img{
+    width: 100%;
+    height: auto;
+}
+
+.azul{
+    font-family: Mallory bi;
+    color: #0E9FD8;
+}
+
+.azul2{
+    font-family: Mallory l;
+    color: #0E9FD8;
+}
+.contenedor{
+    width: 100%;
+    margin-bottom: -4%;
+    background-color: #FFF;
+    display: flex;
+}
+
+.contenedor2{
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+}
+
+.textos{
+    width: 20%;
+    height: 70px;
+    margin: 3%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.trabajo img{
+    width: 100%;
+    height: auto;
+}
+
+.trabajo:hover{
+    background-color: #0e9fd8d4;
+}
+
+.texto{
+    color: #808080;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.larga{
+    width: 180% !important;
+    margin-left: -25%;
+}
+
+.elegirnos{
+    width: 100%;
+    height: 380px;
+    padding-top: 1%;
+    background-color: #0E9FD8;
+    background-image: url("../imagenes/PAGINA\ WEB\ SERIN\ PREW-12.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 104%;
+    text-align: center;
+}
+
+.titulo{
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.ele{
+    font-family: Mallory bi;
+    color: #0871A5;
+}
+
+.por{
+    font-family: Mallory book;
+    color: #0871A5;
+}
+
+.wrapper{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrapper2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.wrapper3{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #0E9FD8;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image2{
+    width: 20%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image3{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image3 a:hover{
+    font-size: 20px;
+    color: #bcbcbc;
+}
+
+
+.image img{
+    width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#larga img{
+    width: max-content;
+    max-width: 400px;
+    margin-left: -15%;
+}
+
+#foto img{
+    margin-top: -35%;
+}
+
+.conten{
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(14, 159, 216, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    opacity: 0.6s;
+}
+
+.conten a{
+    font-family: Mallory b;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.conten2{
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conten2 p{
+    font-family: Mallory b;
+    color: #808080;
+    text-decoration: none;
+    font-size: 23px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.conten3{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conten3 a{
+    font-family: Mallory b;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.conten:hover{
+    opacity: 1;
+}
+
+.conten > *{
+    transform:translateY(25px);
+    transition:transform 0.6s;
+}
+
+.conten:hover > *{
+    transform: translate(0px);
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.icon2{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.icon3{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.iconos{
+    width: 450px;
+    height: 130px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.iconos2{
+    width: 450px;
+    height: 60px;
+}
+
+.iconos3{
+    width: 400px;
+    height: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.iconos2 p{
+    font-family: Mallory b;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 18px;
+    padding-bottom: 0;
+}
+
+.iconos3 p{
+    font-family: Mallory book;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.iconos img{
+    width: 130px;
+    height: auto;
+}
+
+.estudios{
+    width: 100%;
+    margin-bottom: 5%;
+    height: auto;
+    display: flex;
+}
+
+.estudios2{
+    width: 100%;
+    height: 550px;
+    display: flex;
+}
+
+.estudios3{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.button-container{
+    overflow: hidden;
+}
+
+.leyendo{
+    width: 50%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 2% 1%;
+    overflow: hidden;
+}
+.leyendo2{
+    width: 50%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 2% 3%;
+    overflow: hidden;
+}
+
+.leyendo3{
+    width: 100%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 2% 3%;
+    overflow: hidden;
+}
+
+#sep{
+    padding: 7% 2% 3%;
+}
+.leyendo a,.leyendo2 a,.leyendo3 a{
+    font-family: MALLORY l;
+    color: #0E9FD8;
+}
+
+.leyendo h3,.leyendo2 h3,.leyendo3 h3{
+    font-family: MALLORY b;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #0E9FD8;
+}
+
+.leyendo p,.leyendo2 p,.leyendo3 p{
+    text-align: justify;
+    font-family: Mallory book;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
+    color: #808080;
+}
+
+.boton{
+    width: 350PX;
+    height: auto;
+    margin-top: 30px;
+    background-color: #0E9FD8;
+    font-family: Mallory b;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 22px;
+    color: #FFF;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px #80808053;
+}
+
+.boton a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Mallory b;
+}
+
+.video{
+    width: 600px;
+    height: 350px;
+    overflow: hidden;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.video2{
+    width: 45%;
+    height: 550px;
+    overflow: hidden;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.control{
+    width: 100%;
+    height: 350px;
+}
+
+.control2{
+    width: 100%;
+    height: 100%;
+}
+
+.servicios3{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: block;
+    font-size: 45px;
+}
+
+
+
+footer{
+    width: 100%;
+    margin-bottom: 0;
+    height: 190px;
+    display: flex;
+    background-color: #0E9FD8;
+}
+
+.logo{
+    width: 25%;
+    max-height: 180px;
+    align-items: center;
+    overflow: hidden;
+}
+.logo img{
+    width: 60%;
+    padding: 20px;
+    margin-top: -40px;
+}
+
+.arriba{
+    font-family: Mallory book;
+    color: #FFF;
+    font-size: 18px;
+    width: 25%;
+}
+
+.arriba p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contacto{
+    width: 25%;
+}
+
+.fila{
+    display: flex;
+    font-family: Mallory book;
+    color: #FFF;
+    font-size: 18px;
+    padding: 11px 0;
+}
+
+.contacto img{
+    width: 23px;
+    height: 23px;
+    padding-right: 10px;
+}
+
+.redes{
+    width: 20%;
+    margin-left: 5%;
+    overflow: hidden;
+    background-image: url("../imagenes/PAGINA\ WEB\ SERIN\ PREW-12.png");
+    background-size: 200px 100%;
+    background-position: 70px;
+    background-repeat: no-repeat;
+}
+.terminos{
+    height: 60%;
+    padding-top: 15px;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 10px;
+    font-family: Mallory book;
+    color: #FFF;
+}
+
+.red{
+    height: 40%;
+}
+
+.red img{
+    width: 45px;
+    height: auto;
+    margin-left: 20px;
+    cursor: pointer;
+}
+/*carrucel 2*/
+
+body{
+    overflow-x: hidden;
+}
+
+.slide {
+    position: relative;
+    margin-top: 26px;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 100px + 3em);
+}
+
+.slide-open:checked + .slide-item{
+    position: static;
+    opacity: 100;
+}
+
+.slide-item{
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    display: flex;
+}
+
+#slide3{
+    width: 100%;
+    height: 60px;
+}
+
+#slide3 img{
+    height: 60px;
+}
+
+.slide-item #p1 {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    height: 100px;
+    max-width: 100%;
+    width: 25%;
+    margin: 0 55px;
+    text-align: center;
+}
+
+.arus{
+    height: 50% !important;
+}
+
+.slide-item img{
+    object-fit: contain;
+    align-content: center;
+    height: auto;
+    max-height: 100px;
+    width: 80%;
+}
+
+.slide-item p{
+    color: #808080;
+    font-family: Mallory b;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+    top: 35%;
+}
+
+.slide-control.next {
+    right: 2%;
+    top: 35%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+/*experiencia de clientes*/
+
+.expe{
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+.expe img{
+    width: 100%;
+}
+
+/* Dropdown Button */
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative; /* Para que el contenido del menú se posicione relativo al botón */
+    overflow: visible; /* Asegura que no se corte el contenido del menú */
+    width: 15%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+.dropdown a {
+    display: block;
+    width: 100%;
+  }
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    width: auto;
+    display: none;
+    position: absolute;
+    background-color: rgba(14, 159, 216, 0.6);
+    min-width: 160px;
+    z-index: 10; /* Aumenta el valor para estar por encima del banner */
+    top: 100%;
+    padding: 10px;
+    text-align: start;
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 12px 8px;
+    font-size: 17px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {font-weight: bold;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block; /* Muestra el menú */
+    height: auto;   /* Deja que la altura se ajuste al contenido */
+    }
+
+
+/*fin de dropdown*/
+.nosotros2{
+    display: flex;
+}
+
+.texton{
+    width: 60%;
+    height: auto;
+    padding: 20px 40px;
+    color: #808080;
+}
+
+.sigtexto{
+    width: 98%;
+    height: auto;
+    padding: 1%;
+    color: #808080;
+    font-size: 20px;
+    text-align: justify;
+    font-family: Mallory book;
+}
+
+.sigtitulo{
+    font-size: 25px;
+    color: #0E9FD8;
+    font-family: Mallory b;
+    padding: 1%;
+}
+
+.texton2{
+    width: 55%;
+    height: auto;
+    padding: 20px 40px;
+    color: #808080;
+}
+
+.completexto{
+    width: 60%;
+    height: auto;
+    padding: 20px 40px;
+    color: #808080;
+}
+
+.residencial{
+    width: 80%;
+    height: auto;
+    padding: 0 10px 40px 40px;
+    color: #808080;
+}
+
+.residencial2{
+    font-size: 19px;
+    font-family: Mallory book;
+}
+
+.residencial2 ul li{
+    text-align: justify;
+    padding: 1% 10% 0 0;
+}
+
+.residencial2 ul li::marker {
+    color:#0E9FD8; /* Cambia el color de los puntos a rojo */
+}
+
+.residencial2 h4{
+    margin-top: 1%;
+    color: #0E9FD8;
+    font-family: Mallory b;
+}
+
+.nosotrosimg{
+    width: 30%;
+    height: auto;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.nosotrosimg2{
+    width: 40%;
+    margin: 2% 2%;
+    display: flex; /* Activa Flexbox */
+}
+
+.nosotrosimg2 img{
+    width: 100%;
+    height: auto;
+}
+
+.topograficaimg{
+    width: 40%;
+    margin: 2% 2%;
+    display: flex; /* Activa Flexbox */
+    overflow: hidden;
+}
+
+.topograficaimg img{
+    width: 100%;
+    height: 115%;
+    margin-top: -15%;
+}
+
+
+.titulon{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: Mallory b;
+}
+
+.somos{
+    font-size: 19px;
+    font-family: Mallory book;
+    text-align:start;
+}
+
+.somos ul li{
+    text-align: justify;
+    padding: 1% 10% 0 0;
+}
+
+.somos p{
+    padding-bottom: 4%;
+    text-align: justify;
+}
+
+.somos ul li::marker {
+    color:#0E9FD8; /* Cambia el color de los puntos a rojo */
+}
+
+.somos h4{
+    margin-top: 3%;
+    color: #0E9FD8;
+    font-family: Mallory b;
+}
+
+.nosotrosimg img{
+    width: 100%;
+    height: auto;
+}
+
+.texton ul li::marker{
+    color: #0E9FD8;
+}
+
+.texton ul li{
+    font-size: 18px;
+    font-family: Mallory book;
+    margin: 3% 0;
+    text-align: justify;
+}
+
+.titulon h3{
+    font-family: Mallory b;
+    color: #0E9FD8;
+}
+
+.inge{
+    font-family: Mallory book;
+    color: #0E9FD8;
+}
+
+.descarga{
+    text-decoration: none;
+    color: #0E9FD8;
+    font-family: Mallory b;
+}
+
+.descarga:hover{
+    color: #0871A5;
+}
+
+.noticias{
+    display: flex;
+    width: 100%;
+}
+
+.not{
+    width: 55%;
+    text-align: center;
+    font-family: Mallory b;
+    color: #0E9FD8;
+    font-size: 35px;
+}
+
+.otras{
+    width: 45%;
+    font-family: Mallory book;
+}
+
+.otras a{
+    text-decoration: none;
+    color:#0E9FD8;
+    margin: 0 4%;
+    font-size: 20px;
+}
+
+.otras a:hover{
+    color: #0871A5;
+}
+
+.imgnosotros{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sigimg{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sigimg img{
+    margin-top: -20%;
+}
+
+.nosotros{
+    width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    margin-top: -12%;
+}
+.valor{
+    width: auto;
+    height: 100%;
+    float: right;
+}
+
+.valores{
+    width: 29%;
+    height: 540px;
+    margin: 45px 0;
+}
+
+/* Dropdown Button */
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+    cursor: pointer;
+    position: relative; /* Para que el contenido del menú se posicione relativo al botón */
+    overflow: visible; /* Asegura que no se corte el contenido del menú */
+    width: 8%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: Mallory b;
+}
+
+
+.dropdown2 a {
+    display: block;
+    width: 100%;
+  }
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+    cursor:auto;
+    width: 450px;
+    display: none;
+    position: absolute;
+    background-color: rgba(14, 159, 216, 0.8);
+    min-width: 160px;
+    z-index: 10; /* Aumenta el valor para estar por encima del banner */
+    top: 100%;
+    right: 0%;
+    text-align: start;
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content2 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 12px 8px;
+    font-size: 17px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content2 a:hover {font-weight: bold;}
+  
+  /* Show the dropdown menu on hover 
+  .dropdown2:hover .dropdown-content2 {
+    display: block; /* Muestra el menú 
+    height: auto;   /* Deja que la altura se ajuste al contenido 
+    }*/
+
+.mostrarcorreo{
+    display: block; /* Muestra el menú */
+    height: auto;   /* Deja que la altura se ajuste al contenido */
+}    
+
+.datos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.datos p{
+    text-align: start;
+    width: auto;
+    font-size: 20px;
+    font-family: Mallory b;
+    padding: 2% 3%;
+}
+
+.datos img{
+    width: 80px;
+    height: auto;
+    padding: 0 5%;
+}
+
+.campos{
+    padding: 3% 8%;
+}
+
+.campos input[type="text"],textarea,input[type="email"],input[type="number"]{
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    margin: 0 0 5% 0;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(248, 248, 248, 0.8); /* Fondo con transparencia */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Sombra suave */
+    color: black;
+    font-size: 16px;
+    font-family: Mallory b;    
+}
+
+.campos input:focus {
+    color: black;                    /* Cambiar el color del texto al hacer foco */
+    font-family: Mallory b;           /* Cambiar el color del borde al hacer foco */
+  }
+
+.campos input[type="submit"]{
+    width: 30%;
+    margin: 3% 33%;
+    align-items: center;
+    font-size: 20px;
+    color: #0E9FD8;
+    background-color: #FFF;
+    font-family: Mallory b;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.campos label{
+    margin: 2%;
+    font-size: 18px;
+    font-family: mallory b;
+}
+
+textarea{
+    height: 70px;
+}
+
+/*fin de dropdown*/
+
+.ambientalimg{
+    width: 44%;
+    height: min-content;
+    display: flex;
+    margin: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ambientalimg img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.ambientaltexto{
+    width: 55%;
+    height: auto;
+    padding: 20px 40px;
+    color: #808080;
+}
+
+.compleimg{
+    width: 35%;
+    height: 100%;
+    max-height: 280px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 40px;
+}
+
+.compleimg img{
+    width: 100%;
+    height: auto;
+    margin-top: -18%;
+    margin-left: 10%;
+}
+
+.linea{
+    width: 95%;
+    background-color: #afafaf98;
+    height: 1px;
+    margin: 2%;
+}
+
+.laborales{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.ofertas{
+    width: 40%;
+    margin: 1% 4.5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.ofertas img{
+    width: 75%;
+    height: auto;
+}
+
+/* lupa */
+
+.search-container {
+    margin-left: 2%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 40px; /* Ajusta el tamaño de la imagen de la lupa */
+    height: auto;
+    cursor: pointer;
+}
+
+.search-input {
+    color: #808080;
+    font-size: 17px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: width 0.5s ease;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-input.active {
+    width: 200px; /* Ajusta este valor al tamaño que desees */
+    opacity: 1;
+}
+
+/*fin lupa*/
+
+/* Estilo cuando el texto del banner se reduce al hacer clic en la lupa */
+.small-text {
+    width: min-content;
+    font-size: 14px; /* Tamaño reducido */
+    transition: font-size 0.5s ease; /* Animación suave de la transición */
+}
+
+.small-text4 {
+    width: 10%;
+    margin-right: 1%;
+    margin-left: 1%;
+    font-size: 14px; /* Tamaño reducido */
+    transition: font-size 0.5s ease; /* Animación suave de la transición */
+}
+
+.dropdown-small{
+    width: 11%;
+}
+
+#leer,#leer2,#leer3{
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-align: justify;
+    font-family: Mallory book;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
+    color: #808080;
+}
+
+.mostrar {
+    display: flex !important;
+    opacity: 1 !important;
+}
+
+@font-face {
+    font-family: Mallory book;
+    src: url("../letras/Mallory\ Book.ttf");
+}
+
+@font-face {
+    font-family: Mallory l;
+    src: url("../letras/Mallory\ Light.ttf");
+}
+
+@font-face {
+    font-family: Mallory bi;
+    src: url("../letras/Mallory\ Black\ Italic.ttf");
+}
+
+@font-face {
+    font-family: Mallory b;
+    src: url("../letras/Mallory\ Bold.ttf");
+}
