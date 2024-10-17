@@ -89,13 +89,6 @@ header nav a{
     width: 40px;
 }
 
-@media screen and (max-width: 1400px) {
-	.baner{
-        font-size: 18px;
-        margin-left: 2%;
-        margin-right: 2%;
-    }
-}
 
 /*carrucel*/
 .slider input{
@@ -1283,7 +1276,7 @@ body{
     cursor: pointer;
     position: relative; /* Para que el contenido del menú se posicione relativo al botón */
     overflow: visible; /* Asegura que no se corte el contenido del menú */
-    width: 8%;
+    width: 5%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -1471,6 +1464,7 @@ textarea{
 /* lupa */
 
 .search-container {
+    width: 16%;
     margin-left: 2%;
     position: relative;
     display: flex;
@@ -1484,6 +1478,7 @@ textarea{
 }
 
 .search-input {
+    width: 100%;
     color: #808080;
     font-size: 17px;
     padding: 10px;
@@ -1494,6 +1489,7 @@ textarea{
 }
 
 .search-btn {
+    width: 30%;
     background: none;
     border: none;
     cursor: pointer;
@@ -1613,18 +1609,56 @@ textarea{
         position: relative;
     }
 
-    .dropdown-content, .dropdown-content2 {
+    .dropdown-content{
         width: 50%; /* Que ocupe casi todo el ancho en móviles */
         left: 20%; /* Centrar ligeramente */
         top: 100%; /* Posicionar debajo del elemento */
     }
 
     /* Efecto hover más grande en móviles */
-    .dropdown:hover .dropdown-content a, 
-    .dropdown:hover .dropdown-content2 a {
+    .dropdown:hover .dropdown-content a{
         padding: 10px 10px; /* Aumentar el padding para hacer los enlaces más grandes */
         font-size: 18px; /* Aumentar el tamaño de la fuente */
     }
+
+    .dropdown2 {
+        width: auto;
+        position: static; /* Cambiamos a static para mejor control del dropdown */
+    }
+
+    .dropdown-content2 {
+        width: 90%;
+        max-width: 300px;
+        left: 50%; /* Centramos horizontalmente */
+        transform: translateX(-50%); /* Ajuste fino del centrado */
+        margin: 0 auto;
+        top: 165%; /* Centramos verticalmente */
+        transform: translate(-50%, -50%); /* Centramos tanto horizontal como verticalmente */
+        z-index: 1000; /* Aseguramos que esté por encima de otros elementos */
+    }
+
+    .campos {
+        padding: 3% 5%; /* Reducimos el padding para dar más espacio al contenido */
+    }
+
+    .campos input[type="submit"] {
+        width: 50%; /* Hacemos el botón un poco más ancho */
+        margin: 3% auto; /* Centramos el botón */
+        display: block; /* Aseguramos que el margen auto funcione */
+    }
+
+    .datos {
+        flex-direction: column; /* Apilamos los elementos en móvil */
+        align-items: center; /* Centramos los elementos */
+    }
+
+    .datos p {
+        text-align: center; /* Centramos el texto */
+        padding: 2% 0; /* Ajustamos el padding */
+    }
+
+    .datos img {
+        width: 60px; /* Reducimos un poco el tamaño de la imagen */
+        padding: 2% 0; /* Ajustamos el padding */
+    }
 }
-
-
