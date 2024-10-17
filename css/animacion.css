@@ -1563,68 +1563,68 @@ textarea{
     src: url("../letras/Mallory\ Bold.ttf");
 }
 
-/* Estilos para tablets */
 @media screen and (max-width: 768px) {
     header nav {
         flex-direction: column;
         height: auto;
+        align-items: center; /* Centrar los elementos del nav */
+        padding: 10px;
     }
 
-    .baner, .c {
+    header nav a, .dropdown {
+        width: 100%; /* Cada enlace ocupará todo el ancho disponible */
         margin: 5px 0;
-        font-size: 18px;
+        text-align: center; /* Centrar el texto */
     }
 
     .search-container {
-        width: 100%;
-        margin: 10px 0;
+        width: 90%;
+        margin-top: 10px;
     }
 
-    .servicios, .wrapper, .wrapper2, .elegirnos, .icon, .icon2, .icon3 {
-        flex-direction: column;
+    #imagen {
+        width: 120px;
+        margin: 0 auto;
+    }
+    .search-input {
+        width: 80%;
+        max-width: 250px; /* Ajusta este valor para controlar la longitud máxima */
+    }
+    .search-btn{
+        width: auto;
+    }
+    .search-container{
+        width: 60%;
         align-items: center;
     }
-
-    .image {
-        margin: 10px 0;
+    .img {
+        width: 30px; /* Ajusta este valor según lo que se vea mejor */
     }
 
-    .leyendo, .video {
-        width: 100%;
-        margin: 0;
-    }
-}
-
-/* Estilos para móviles */
-@media screen and (max-width: 480px) {
-    #imagen {
-        width: 100px;
-        margin: 10px 0;
+    .dropdown2 {
+        width: auto; /* Ajusta para que el contenedor se adapte mejor */
     }
 
-    .banerp {
-        font-size: 20px;
-        margin: 0;
-        text-align: center;
-        width: 100%;
+    .dropdown-content2 {
+        width: 90%; /* Ocupa un ancho adecuado en móviles */
+        right: 5%; /* Ajusta la posición para centrarlo */
+    }
+    header nav {
+        position: relative;
     }
 
-    .wrapper, .wrapper2, .servicios {
-        display: block;
-        width: 100%;
+    .dropdown-content, .dropdown-content2 {
+        width: 50%; /* Que ocupe casi todo el ancho en móviles */
+        left: 20%; /* Centrar ligeramente */
+        top: 100%; /* Posicionar debajo del elemento */
     }
 
-    .conten2 p {
-        font-size: 18px;
-    }
-
-    .video {
-        width: 100%;
-        height: auto;
-    }
-
-    .boton {
-        width: 80%;
-        margin: 10px auto;
+    /* Efecto hover más grande en móviles */
+    .dropdown:hover .dropdown-content a, 
+    .dropdown:hover .dropdown-content2 a {
+        padding: 10px 10px; /* Aumentar el padding para hacer los enlaces más grandes */
+        font-size: 18px; /* Aumentar el tamaño de la fuente */
     }
 }
+
+
