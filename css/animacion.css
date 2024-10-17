@@ -1562,3 +1562,69 @@ textarea{
     font-family: Mallory b;
     src: url("../letras/Mallory\ Bold.ttf");
 }
+
+/* Estilos para tablets */
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .baner, .c {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .search-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .servicios, .wrapper, .wrapper2, .elegirnos, .icon, .icon2, .icon3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        margin: 10px 0;
+    }
+
+    .leyendo, .video {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 480px) {
+    #imagen {
+        width: 100px;
+        margin: 10px 0;
+    }
+
+    .banerp {
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .wrapper, .wrapper2, .servicios {
+        display: block;
+        width: 100%;
+    }
+
+    .conten2 p {
+        font-size: 18px;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .boton {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
