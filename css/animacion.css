@@ -1663,8 +1663,7 @@ textarea{
         left: 50%; /* Centramos horizontalmente */
         transform: translateX(-50%); /* Ajuste fino del centrado */
         margin: 0 auto;
-        top: 400%; /* Centramos verticalmente */
-        transform: translate(-50%, -50%); /* Centramos tanto horizontal como verticalmente */
+        top: 50%; /* Centramos verticalmente */
         z-index: 1000; /* Aseguramos que esté por encima de otros elementos */
     }
 
