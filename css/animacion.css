@@ -144,7 +144,7 @@ header nav a{
 
 .firstslide,.secondslide,.thirdslide,.fourslide{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 620px;
     display: flex;
     justify-content: center;
@@ -1575,45 +1575,59 @@ textarea{
 }
 
 @media screen and (max-width: 768px) {
+
+    .baner{
+        font-size: 8px;
+    }
+
     header nav {
-        flex-direction: column;
         height: auto;
         align-items: center; /* Centrar los elementos del nav */
         padding: 10px;
     }
 
+    .palo{
+        margin: auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding: auto;
+        width: 5%;
+    }
+
     header nav a, .dropdown {
-        width: 100%; /* Cada enlace ocupará todo el ancho disponible */
-        margin: 5px 0;
+        width: min-content;
+        width: 20%; /* Cada enlace ocupará todo el ancho disponible */
+        margin: 1px 0;
         text-align: center; /* Centrar el texto */
     }
 
     .search-container {
-        width: 90%;
-        margin-top: 10px;
+        width: 25%;
+        margin-left: 0;
     }
 
     #imagen {
-        width: 120px;
+        width: 80%;
         margin: 0 auto;
     }
     .search-input {
-        width: 80%;
-        max-width: 250px; /* Ajusta este valor para controlar la longitud máxima */
+        font-size: 9px;
+        padding: 0;
+        height: 40%;
+        width: 70%;
+        max-width: 100px; /* Ajusta este valor para controlar la longitud máxima */
     }
     .search-btn{
-        width: auto;
-    }
-    .search-container{
-        width: 60%;
-        align-items: center;
-    }
-    .img {
-        width: 30px; /* Ajusta este valor según lo que se vea mejor */
+        width: 20%;
     }
 
-    .dropdown2 {
-        width: auto; /* Ajusta para que el contenedor se adapte mejor */
+    .search-btn img{
+        width: 100%;
+    }
+
+    .img {
+        align-items: start;
+        width: 70%; /* Ajusta este valor según lo que se vea mejor */
     }
 
     .dropdown-content2 {
@@ -1621,6 +1635,7 @@ textarea{
         right: 5%; /* Ajusta la posición para centrarlo */
     }
     header nav {
+        margin-right: 100px;
         position: relative;
     }
 
@@ -1637,7 +1652,8 @@ textarea{
     }
 
     .dropdown2 {
-        width: auto;
+        justify-content: left;
+        width: 15%;
         position: static; /* Cambiamos a static para mejor control del dropdown */
     }
 
@@ -1693,6 +1709,11 @@ textarea{
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .firstslide img{
+        padding: 0;
+        width: 100%;
     }
 
     .secondslide .banerp{
@@ -1949,6 +1970,21 @@ textarea{
 
     footer{
         height: min-content;
+    }
+
+    #baner3{
+        pointer-events: none;
+        cursor: default;
+    }
+
+    #baner2{
+        font-size: 8px;
+        margin: 0;
+        width: 25%;
+    }
+
+    #correo{
+        margin-right: 20%;
     }
 }  
  
