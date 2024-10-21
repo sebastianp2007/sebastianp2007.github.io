@@ -1576,6 +1576,10 @@ textarea{
 
 @media screen and (max-width: 768px) {
 
+    header{
+        height: min-content;
+    }
+
     .baner{
         font-size: 8px;
     }
@@ -1630,25 +1634,21 @@ textarea{
         width: 70%; /* Ajusta este valor según lo que se vea mejor */
     }
 
-    .dropdown-content2 {
-        width: 90%; /* Ocupa un ancho adecuado en móviles */
-        right: 5%; /* Ajusta la posición para centrarlo */
-    }
     header nav {
         margin-right: 100px;
         position: relative;
     }
 
     .dropdown-content{
-        width: 50%; /* Que ocupe casi todo el ancho en móviles */
-        left: 20%; /* Centrar ligeramente */
+        width: 30%; /* Que ocupe casi todo el ancho en móviles */
+        left: -100%; /* Centrar ligeramente */
         top: 100%; /* Posicionar debajo del elemento */
     }
 
     /* Efecto hover más grande en móviles */
     .dropdown:hover .dropdown-content a{
-        padding: 10px 10px; /* Aumentar el padding para hacer los enlaces más grandes */
-        font-size: 18px; /* Aumentar el tamaño de la fuente */
+        padding: 3px 3px; /* Aumentar el padding para hacer los enlaces más grandes */
+        font-size: 10px; /* Aumentar el tamaño de la fuente */
     }
 
     .dropdown2 {
@@ -1663,7 +1663,7 @@ textarea{
         left: 50%; /* Centramos horizontalmente */
         transform: translateX(-50%); /* Ajuste fino del centrado */
         margin: 0 auto;
-        top: 165%; /* Centramos verticalmente */
+        top: 400%; /* Centramos verticalmente */
         transform: translate(-50%, -50%); /* Centramos tanto horizontal como verticalmente */
         z-index: 1000; /* Aseguramos que esté por encima de otros elementos */
     }
