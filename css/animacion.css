@@ -41,7 +41,7 @@ header nav *{
 }
 
 header nav {
-    width: 100%;
+    width: 90%;
     height: 100px;
     float: left;
     display: flex;
@@ -1574,10 +1574,15 @@ textarea{
     src: url("../letras/Mallory\ Bold.ttf");
 }
 
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
+
+    body{
+        width: 100%;
+    }
 
     header{
-        height: min-content;
+        height: auto;
+        min-height: 80px;
     }
 
     .baner{
@@ -1585,9 +1590,11 @@ textarea{
     }
 
     header nav {
+        width: 98%;
         height: auto;
         align-items: center; /* Centrar los elementos del nav */
-        padding: 10px;
+        padding: 5px 0;
+        position: relative;
     }
 
     .palo{
@@ -1595,18 +1602,18 @@ textarea{
         margin-left: 0;
         margin-right: 0;
         padding: auto;
-        width: 5%;
+        width: 1%;
     }
 
     header nav a, .dropdown {
         width: min-content;
-        width: 20%; /* Cada enlace ocupará todo el ancho disponible */
+        width: 17%; /* Cada enlace ocupará todo el ancho disponible */
         margin: 1px 0;
         text-align: center; /* Centrar el texto */
     }
 
     .search-container {
-        width: 25%;
+        width: 22%;
         margin-left: 0;
     }
 
@@ -1634,10 +1641,7 @@ textarea{
         width: 70%; /* Ajusta este valor según lo que se vea mejor */
     }
 
-    header nav {
-        margin-right: 100px;
-        position: relative;
-    }
+
 
     .dropdown-content{
         width: 30%; /* Que ocupe casi todo el ancho en móviles */
@@ -1653,7 +1657,7 @@ textarea{
 
     .dropdown2 {
         justify-content: left;
-        width: 15%;
+        width: 12%;
         position: static; /* Cambiamos a static para mejor control del dropdown */
     }
 
@@ -1702,6 +1706,7 @@ textarea{
 
     .slider{
         width: 100%;
+        overflow: hidden;
     }
 
     .firstslide,.secondslide,.thirdslide,.fourslide{
@@ -1979,11 +1984,65 @@ textarea{
     #baner2{
         font-size: 8px;
         margin: 0;
-        width: 25%;
+        width: 15%;
     }
 
     #correo{
         margin-right: 20%;
     }
+
+    .texton{
+        width: max-content;
+        max-width: 90%;
+        padding: 5px 20px;
+    }
+
+    .texton ul{
+        width: 100%;
+    }
+
+    .somos{
+        font-size: 80%;
+        font-family: Mallory book;
+        text-align:start;
+    }
+
+    .titulon{
+        margin-bottom: 10px;
+        font-size: 80%;
+    }
+
+    .nosotros2{
+        width: 100%;
+        display: block;
+    }
+
+    .valor{
+        width: auto;
+        height: auto;
+        max-height: 400px;
+        margin: 0 10%;
+        float:none;
+    }
+    
+    .valores{
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        margin: 0;
+    }
+    
+    .sigtexto{
+        width: 94%;
+        height: auto;
+        padding: 3%;
+        font-size: 60%;
+    }
+    
+    .sigtitulo{
+        font-size: 70%;
+        padding: 1% 3%;
+    }
+    
 }  
  
